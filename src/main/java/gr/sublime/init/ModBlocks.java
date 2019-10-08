@@ -5,6 +5,7 @@ import gr.sublime.block.BlockDirtBase;
 import gr.sublime.block.BlockDoublePlantEterisk;
 import gr.sublime.block.BlockFarmlandBase;
 import gr.sublime.block.BlockFenceBase;
+import gr.sublime.block.BlockFenceGateBase;
 import gr.sublime.block.BlockFlowerBase;
 import gr.sublime.block.BlockLeavesBloodlessElm;
 import gr.sublime.block.BlockLeavesFallen;
@@ -58,6 +59,8 @@ public class ModBlocks {
     public static BlockThatch THATCH = new BlockThatch("thatch");
     public static BlockFenceBase FENCE_BLOODLESS_ELM = new BlockFenceBase(Material.WOOD, "fence_bloodless_elm");
     public static BlockFenceBase FENCE_HANAMI = new BlockFenceBase(Material.WOOD, "fence_hanami");
+    public static BlockFenceGateBase FENCE_GATE_BLOODLESS_ELM = new BlockFenceGateBase("fence_gate_bloodless_elm");
+    public static BlockFenceGateBase FENCE_GATE_HANAMI = new BlockFenceGateBase("fence_gate_hanami");
 
     public static void register(IForgeRegistry<Block> registry) {
         registry.registerAll(
@@ -83,7 +86,9 @@ public class ModBlocks {
                 BLACK_LOTUS,
                 THATCH,
                 FENCE_BLOODLESS_ELM,
-                FENCE_HANAMI
+                FENCE_HANAMI,
+                FENCE_GATE_BLOODLESS_ELM,
+                FENCE_GATE_HANAMI
         );
     }
 
@@ -109,7 +114,9 @@ public class ModBlocks {
                 DOUBLE_PLANT_ETERISK,
                 CALAMAGROSTIS,
                 FENCE_BLOODLESS_ELM,
-                FENCE_HANAMI
+                FENCE_HANAMI,
+                FENCE_GATE_BLOODLESS_ELM,
+                FENCE_GATE_HANAMI
         );
 
         items.add(new ItemBlackLotus().setRegistryName(BLACK_LOTUS.getRegistryName()));
@@ -151,7 +158,9 @@ public class ModBlocks {
                 BLACK_LOTUS,
                 THATCH,
                 FENCE_BLOODLESS_ELM,
-                FENCE_HANAMI
+                FENCE_HANAMI,
+                FENCE_GATE_BLOODLESS_ELM,
+                FENCE_GATE_HANAMI
         );
     }
 
