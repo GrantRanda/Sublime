@@ -1,0 +1,6 @@
+{
+  "parent": "block/wall_gate_closed",
+  "textures": {
+    "texture": "sublime:blocks/planks_bloodless_elm"
+  }
+}
