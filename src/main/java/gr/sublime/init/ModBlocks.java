@@ -4,6 +4,7 @@ import gr.sublime.Main;
 import gr.sublime.block.BlockDirtBase;
 import gr.sublime.block.BlockDoublePlantEterisk;
 import gr.sublime.block.BlockFarmlandBase;
+import gr.sublime.block.BlockFenceBase;
 import gr.sublime.block.BlockFlowerBase;
 import gr.sublime.block.BlockLeavesBloodlessElm;
 import gr.sublime.block.BlockLeavesFallen;
@@ -23,6 +24,7 @@ import gr.sublime.item.ItemBlackLotus;
 import gr.sublime.world.gen.feature.WorldGenTreeBloodlessElm;
 import gr.sublime.world.gen.feature.WorldGenTreeHanami;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -54,6 +56,8 @@ public class ModBlocks {
     public static BlockCalamagrostis CALAMAGROSTIS = new BlockCalamagrostis("calamagrostis");
     public static BlockLilyBase BLACK_LOTUS = new BlockLilyBase("black_lotus");
     public static BlockThatch THATCH = new BlockThatch("thatch");
+    public static BlockFenceBase FENCE_BLOODLESS_ELM = new BlockFenceBase(Material.WOOD, "fence_bloodless_elm");
+    public static BlockFenceBase FENCE_HANAMI = new BlockFenceBase(Material.WOOD, "fence_hanami");
 
     public static void register(IForgeRegistry<Block> registry) {
         registry.registerAll(
@@ -77,7 +81,9 @@ public class ModBlocks {
                 DOUBLE_PLANT_ETERISK,
                 CALAMAGROSTIS,
                 BLACK_LOTUS,
-                THATCH
+                THATCH,
+                FENCE_BLOODLESS_ELM,
+                FENCE_HANAMI
         );
     }
 
@@ -101,7 +107,9 @@ public class ModBlocks {
                 MUTED_FARMLAND,
                 FLOWER_ASTRANTIA,
                 DOUBLE_PLANT_ETERISK,
-                CALAMAGROSTIS
+                CALAMAGROSTIS,
+                FENCE_BLOODLESS_ELM,
+                FENCE_HANAMI
         );
 
         items.add(new ItemBlackLotus().setRegistryName(BLACK_LOTUS.getRegistryName()));
@@ -141,7 +149,9 @@ public class ModBlocks {
                 DOUBLE_PLANT_ETERISK,
                 CALAMAGROSTIS,
                 BLACK_LOTUS,
-                THATCH
+                THATCH,
+                FENCE_BLOODLESS_ELM,
+                FENCE_HANAMI
         );
     }
 

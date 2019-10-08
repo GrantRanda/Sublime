@@ -9,6 +9,7 @@ public class BlockBase extends Block {
 
     public BlockBase(Material material, String name) {
         super(material);
+
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(Main.creativeTab);
