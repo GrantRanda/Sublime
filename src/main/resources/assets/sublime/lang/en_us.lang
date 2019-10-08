@@ -26,6 +26,8 @@ tile.double_plant_eterisk.name=Eterisk
 tile.calamagrostis.name=Calamagrostis
 tile.black_lotus.name=Black Lotus
 tile.thatch.name=Thatch
+tile.fence_bloodless_elm.name=Bloodless Elm Fence
+tile.fence_hanami.name=Hanami Fence
 
 // Armor
 item.iridium_helmet.name=Iridium Helmet
@@ -44,12 +46,12 @@ item.iridium_sword.name=Iridium Sword
 container.niobium_chest=Niobium Chest
 
 // Creative Tabs
-itemGroup.sublime=sublime
+itemGroup.sublime=Sublime
 
 // Config
-sublime.config.title=sublime Config
+sublime.config.title=Sublime Config
 sublime.config.cat.terrain=Terrain
 
 // World gen
-generator.sublime=sublime
+generator.sublime=Sublime
 generator.sublime.info=Sublime Mod
