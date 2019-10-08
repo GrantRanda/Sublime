@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PP",
+    "PP"
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "sublime:calamagrostis"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:thatch",
+    "count": 2
+  }
+}

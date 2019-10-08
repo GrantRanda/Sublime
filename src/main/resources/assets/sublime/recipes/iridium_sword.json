@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "X",
+    "X",
+    "#"
+  ],
+
+  "key":
+  {
+    "#":
+    {
+      "item": "sublime:iridium_rod"
+    },
+    "X":
+    {
+      "item": "sublime:iridium"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:iridium_sword",
+    "count": 1
+  }
+}

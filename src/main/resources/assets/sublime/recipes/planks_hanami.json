@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "L"
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "sublime:log_hanami"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:planks_hanami",
+    "count": 4
+  }
+}

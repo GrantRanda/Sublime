@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "sublime:blocks/muted_dirt",
+    "bottom": "sublime:blocks/muted_dirt",
+    "top": "sublime:blocks/muted_grass_top",
+    "side": "sublime:blocks/muted_grass_side_snowed"
+  }
+}

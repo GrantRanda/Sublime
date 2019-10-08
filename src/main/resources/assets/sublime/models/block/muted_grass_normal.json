@@ -1,0 +1,10 @@
+{
+  "parent": "sublime:block/muted_grass",
+  "textures": {
+    "particle": "sublime:blocks/muted_dirt",
+    "bottom": "sublime:blocks/muted_dirt",
+    "top": "sublime:blocks/muted_grass_top",
+    "side": "sublime:blocks/muted_grass_side",
+    "overlay": "sublime:blocks/muted_grass_side_overlay"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "pink_dye",
+  "ingredients": [
+    {
+      "item": "sublime:flower_astrantia"
+    }
+  ],
+  "result": {
+    "item": "minecraft:dye",
+    "data": 9,
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "sublime:blocks/log_hanami",
+    "end": "sublime:blocks/log_hanami_top"
+  }
+}

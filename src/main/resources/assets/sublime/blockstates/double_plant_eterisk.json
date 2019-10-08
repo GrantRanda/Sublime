@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "facing=north,half=lower,variant=eterisk": { "model": "sublime:double_plant_eterisk_bottom" },
+    "facing=south,half=lower,variant=eterisk": { "model": "sublime:double_plant_eterisk_bottom" },
+    "facing=east,half=lower,variant=eterisk": { "model": "sublime:double_plant_eterisk_bottom" },
+    "facing=west,half=lower,variant=eterisk": { "model": "sublime:double_plant_eterisk_bottom" },
+    "facing=north,half=upper,variant=eterisk": { "model": "sublime:double_plant_eterisk_top" },
+    "facing=south,half=upper,variant=eterisk": { "model": "sublime:double_plant_eterisk_top" },
+    "facing=east,half=upper,variant=eterisk": { "model": "sublime:double_plant_eterisk_top" },
+    "facing=west,half=upper,variant=eterisk": { "model": "sublime:double_plant_eterisk_top" }
+  }
+}

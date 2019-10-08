@@ -1,0 +1,55 @@
+// Items
+item.iridium.name=Iridium
+item.iridium_rod.name=Iridium Rod
+item.niobium_ingot.name=Niobium Ingot
+item.tungsten_ingot.name=Tungsten Ingot
+
+// Blocks
+tile.iridium_ore.name=Iridium Ore
+tile.niobium_ore.name=Niobium Ore
+tile.tungsten_ore.name=Tungsten Ore
+tile.niobium_chest.name=Niobium Chest
+tile.log_bloodless_elm.name=Bloodless Elm Log
+tile.log_hanami.name=Hanami Log
+tile.planks_bloodless_elm.name=Bloodless Elm Planks
+tile.planks_hanami.name=Hanami Planks
+tile.leaves_bloodless_elm.name=Bloodless Elm Leaves
+tile.leaves_fallen.name=Fallen Leaves
+tile.leaves_hanami.name=Hanami Leaves
+tile.sapling_bloodless_elm.name=Bloodless Elm Sapling
+tile.sapling_hanami.name=Hanami Sapling
+tile.muted_dirt.name=Muted Dirt
+tile.muted_grass.name=Muted Grass
+tile.muted_farmland.name=Muted Farmland
+tile.flower_astrantia.name=Astrantia
+tile.double_plant_eterisk.name=Eterisk
+tile.calamagrostis.name=Calamagrostis
+tile.black_lotus.name=Black Lotus
+tile.thatch.name=Thatch
+
+// Armor
+item.iridium_helmet.name=Iridium Helmet
+item.iridium_chestplate.name=Iridium Chestplate
+item.iridium_leggings.name=Iridium Leggings
+item.iridium_boots.name=Iridium Boots
+
+// Tools
+item.iridium_pickaxe.name=Iridium Pickaxe
+item.iridium_axe.name=Iridium Axe
+item.iridium_shovel.name=Iridium Shovel
+item.iridium_hoe.name=Iridium Hoe
+item.iridium_sword.name=Iridium Sword
+
+// Containers
+container.niobium_chest=Niobium Chest
+
+// Creative Tabs
+itemGroup.sublime=sublime
+
+// Config
+sublime.config.title=sublime Config
+sublime.config.cat.terrain=Terrain
+
+// World gen
+generator.sublime=sublime
+generator.sublime.info=Sublime Mod

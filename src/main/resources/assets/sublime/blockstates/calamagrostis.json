@@ -1,0 +1,30 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "all": "sublime:blocks/calamagrostis"
+    },
+    "model": "sublime:calamagrostis",
+    "uvlock": true
+  },
+  "variants": {
+    "age": {
+      "0": { "model": "sublime:calamagrostis" },
+      "1": { "model": "sublime:calamagrostis" },
+      "2": { "model": "sublime:calamagrostis" },
+      "3": { "model": "sublime:calamagrostis" },
+      "4": { "model": "sublime:calamagrostis" },
+      "5": { "model": "sublime:calamagrostis" },
+      "6": { "model": "sublime:calamagrostis" },
+      "7": { "model": "sublime:calamagrostis" },
+      "8": { "model": "sublime:calamagrostis" },
+      "9": { "model": "sublime:calamagrostis" },
+      "10": { "model": "sublime:calamagrostis" },
+      "11": { "model": "sublime:calamagrostis" },
+      "12": { "model": "sublime:calamagrostis" },
+      "13": { "model": "sublime:calamagrostis" },
+      "14": { "model": "sublime:calamagrostis" },
+      "15": { "model": "sublime:calamagrostis" }
+    }
+  }
+}

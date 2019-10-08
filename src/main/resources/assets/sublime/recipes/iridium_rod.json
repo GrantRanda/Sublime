@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "N",
+    "I",
+    "N"
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "sublime:niobium_ingot"
+    },
+    "I":
+    {
+      "item": "sublime:iridium"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:iridium_rod",
+    "count": 2
+  }
+}

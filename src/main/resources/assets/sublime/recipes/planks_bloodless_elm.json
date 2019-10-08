@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "L"
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "sublime:log_bloodless_elm"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:planks_bloodless_elm",
+    "count": 4
+  }
+}

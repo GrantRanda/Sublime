@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "axis=y":  { "model": "sublime:log_bloodless_elm" },
+    "axis=z":   { "model": "sublime:log_bloodless_elm", "x": 90 },
+    "axis=x":   { "model": "sublime:log_bloodless_elm", "x": 90, "y": 90 },
+    "axis=none": { "model": "sublime:log_bloodless_elm_bark" }
+  }
+}

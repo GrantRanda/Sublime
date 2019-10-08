@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "NNN",
+    "NCN",
+    "NNN"
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "sublime:niobium_chest"
+    },
+    "C":
+    {
+      "item": "minecraft:chest"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:niobium_chest",
+    "count": 1
+  }
+}

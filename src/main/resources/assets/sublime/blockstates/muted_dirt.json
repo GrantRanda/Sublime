@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "normal": [
+      { "model": "sublime:muted_dirt" },
+      { "model": "sublime:muted_dirt", "y": 90 },
+      { "model": "sublime:muted_dirt", "y": 180 },
+      { "model": "sublime:muted_dirt", "y": 270 }
+    ]
+  }
+}
