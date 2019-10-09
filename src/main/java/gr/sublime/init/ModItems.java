@@ -31,17 +31,17 @@ public class ModItems {
     public static final ItemBase TUNGSTEN_INGOT = new ItemBase("tungsten_ingot");
 
     // Armor
-    public static final ArmorBase IRIDIUM_HELMET = new ArmorBase("iridium_helmet", ARMOR_IRIDIUM, 5, EntityEquipmentSlot.HEAD);
-    public static final ArmorBase IRIDIUM_CHESTPLATE = new ArmorBase("iridium_chestplate", ARMOR_IRIDIUM, 5, EntityEquipmentSlot.CHEST);
-    public static final ArmorBase IRIDIUM_LEGGINGS = new ArmorBase("iridium_leggings", ARMOR_IRIDIUM, 5, EntityEquipmentSlot.LEGS);
-    public static final ArmorBase IRIDIUM_BOOTS = new ArmorBase("iridium_boots", ARMOR_IRIDIUM, 5, EntityEquipmentSlot.FEET);
+    public static final ArmorBase IRIDIUM_HELMET = new ArmorBase("iridium_helmet", ARMOR_IRIDIUM, 5, EntityEquipmentSlot.HEAD, IRIDIUM);
+    public static final ArmorBase IRIDIUM_CHESTPLATE = new ArmorBase("iridium_chestplate", ARMOR_IRIDIUM, 5, EntityEquipmentSlot.CHEST, IRIDIUM);
+    public static final ArmorBase IRIDIUM_LEGGINGS = new ArmorBase("iridium_leggings", ARMOR_IRIDIUM, 5, EntityEquipmentSlot.LEGS, IRIDIUM);
+    public static final ArmorBase IRIDIUM_BOOTS = new ArmorBase("iridium_boots", ARMOR_IRIDIUM, 5, EntityEquipmentSlot.FEET, IRIDIUM);
 
     // Tools
-    public static final ToolPickaxe IRIDIUM_PICKAXE = new ToolPickaxe("iridium_pickaxe", TOOL_IRIDIUM);
-    public static final ToolAxe IRIDIUM_AXE = new ToolAxe("iridium_axe", TOOL_IRIDIUM);
-    public static final ToolShovel IRIDIUM_SHOVEL = new ToolShovel("iridium_shovel", TOOL_IRIDIUM);
-    public static final ToolHoe IRIDIUM_HOE = new ToolHoe("iridium_hoe", TOOL_IRIDIUM);
-    public static final ToolSword IRIDIUM_SWORD = new ToolSword("iridium_sword", TOOL_IRIDIUM);
+    public static final ToolPickaxe IRIDIUM_PICKAXE = new ToolPickaxe("iridium_pickaxe", TOOL_IRIDIUM, IRIDIUM);
+    public static final ToolAxe IRIDIUM_AXE = new ToolAxe("iridium_axe", TOOL_IRIDIUM, IRIDIUM);
+    public static final ToolShovel IRIDIUM_SHOVEL = new ToolShovel("iridium_shovel", TOOL_IRIDIUM, IRIDIUM);
+    public static final ToolHoe IRIDIUM_HOE = new ToolHoe("iridium_hoe", TOOL_IRIDIUM, IRIDIUM);
+    public static final ToolSword IRIDIUM_SWORD = new ToolSword("iridium_sword", TOOL_IRIDIUM, IRIDIUM);
 
     public static void register(IForgeRegistry<Item> registry) {
         registry.registerAll(
