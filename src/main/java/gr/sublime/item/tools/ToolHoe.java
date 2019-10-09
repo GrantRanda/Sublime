@@ -7,6 +7,7 @@ import net.minecraft.block.BlockDirt;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemHoe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;
@@ -17,8 +18,13 @@ import net.minecraft.world.World;
 
 public class ToolHoe extends ItemHoe {
 
-    public ToolHoe(String name, ToolMaterial material) {
+    private Item repair;
+
+    public ToolHoe(String name, ToolMaterial material, Item repair) {
         super(material);
+
+        this.repair = repair;
+
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(Main.creativeTab);
@@ -64,4 +70,10 @@ public class ToolHoe extends ItemHoe {
             return EnumActionResult.PASS;
         }
     }
+
+    @Override
+    public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) {
+        return repair.getItem() == this.repair || super.getIsRepairable(toRepair, repair);
+    }
+
 }
