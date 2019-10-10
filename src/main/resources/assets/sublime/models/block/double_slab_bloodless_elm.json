@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures":
+  {
+    "all": "sublime:blocks/planks_bloodless_elm"
+  }
+}

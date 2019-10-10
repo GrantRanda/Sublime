@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom,variant=default": { "model": "sublime:half_slab_hanami" },
+    "half=top,variant=default": { "model": "sublime:upper_slab_hanami" }
+  }
+}
