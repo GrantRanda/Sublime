@@ -30,6 +30,8 @@ tile.fence_bloodless_elm.name=Bloodless Elm Fence
 tile.fence_hanami.name=Hanami Fence
 tile.fence_gate_bloodless_elm.name=Bloodless Elm Fence Gate
 tile.fence_gate_hanami.name=Hanami Fence Gate
+tile.slab_bloodless_elm.name=Bloodless Elm Slab
+tile.slab_hanami.name=Hanami Slab
 
 // Armor
 item.iridium_helmet.name=Iridium Helmet

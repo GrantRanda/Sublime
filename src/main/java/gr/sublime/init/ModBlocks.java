@@ -20,6 +20,7 @@ import gr.sublime.block.BlockOreTungsten;
 import gr.sublime.block.BlockCalamagrostis;
 import gr.sublime.block.BlockPlanksBase;
 import gr.sublime.block.BlockSaplingBase;
+import gr.sublime.block.BlockSlabBase;
 import gr.sublime.block.BlockThatch;
 import gr.sublime.item.ItemBlackLotus;
 import gr.sublime.world.gen.feature.WorldGenTreeBloodlessElm;
@@ -28,6 +29,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemSlab;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.registries.IForgeRegistry;
 
@@ -61,6 +63,10 @@ public class ModBlocks {
     public static BlockFenceBase FENCE_HANAMI = new BlockFenceBase(Material.WOOD, "fence_hanami");
     public static BlockFenceGateBase FENCE_GATE_BLOODLESS_ELM = new BlockFenceGateBase("fence_gate_bloodless_elm");
     public static BlockFenceGateBase FENCE_GATE_HANAMI = new BlockFenceGateBase("fence_gate_hanami");
+    public static BlockSlabBase DOUBLE_SLAB_BLOODLESS_ELM = new BlockSlabBase.Double(Material.WOOD, ModBlocks.SLAB_BLOODLESS_ELM, "double_slab_bloodless_elm");
+    public static BlockSlabBase SLAB_BLOODLESS_ELM = new BlockSlabBase.Half(Material.WOOD, ModBlocks.SLAB_BLOODLESS_ELM, "slab_bloodless_elm");
+    public static BlockSlabBase DOUBLE_SLAB_HANAMI = new BlockSlabBase.Double(Material.WOOD, ModBlocks.SLAB_HANAMI, "double_slab_hanami");
+    public static BlockSlabBase SLAB_HANAMI = new BlockSlabBase.Half(Material.WOOD, ModBlocks.SLAB_HANAMI, "slab_hanami");
 
     public static void register(IForgeRegistry<Block> registry) {
         registry.registerAll(
@@ -88,7 +94,11 @@ public class ModBlocks {
                 FENCE_BLOODLESS_ELM,
                 FENCE_HANAMI,
                 FENCE_GATE_BLOODLESS_ELM,
-                FENCE_GATE_HANAMI
+                FENCE_GATE_HANAMI,
+                DOUBLE_SLAB_BLOODLESS_ELM,
+                SLAB_BLOODLESS_ELM,
+                DOUBLE_SLAB_HANAMI,
+                SLAB_HANAMI
         );
     }
 
@@ -128,6 +138,8 @@ public class ModBlocks {
                     }
                 }.setRegistryName(THATCH.getRegistryName())
         );
+        items.add(new ItemSlab(SLAB_BLOODLESS_ELM, SLAB_BLOODLESS_ELM, DOUBLE_SLAB_BLOODLESS_ELM).setRegistryName(SLAB_BLOODLESS_ELM.getRegistryName()));
+        items.add(new ItemSlab(SLAB_HANAMI, SLAB_HANAMI, DOUBLE_SLAB_HANAMI).setRegistryName(SLAB_HANAMI.getRegistryName()));
 
         for (Item item : items) {
             registry.register(item);
@@ -160,7 +172,9 @@ public class ModBlocks {
                 FENCE_BLOODLESS_ELM,
                 FENCE_HANAMI,
                 FENCE_GATE_BLOODLESS_ELM,
-                FENCE_GATE_HANAMI
+                FENCE_GATE_HANAMI,
+                SLAB_BLOODLESS_ELM,
+                SLAB_HANAMI
         );
     }
 
