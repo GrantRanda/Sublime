@@ -3,6 +3,8 @@ item.iridium.name=Iridium
 item.iridium_rod.name=Iridium Rod
 item.niobium_ingot.name=Niobium Ingot
 item.tungsten_ingot.name=Tungsten Ingot
+item.door_bloodless_elm.name=Bloodless Elm Door
+item.door_hanami.name=Hanami Door
 
 // Blocks
 tile.iridium_ore.name=Iridium Ore
@@ -34,6 +36,8 @@ tile.slab_bloodless_elm.name=Bloodless Elm Slab
 tile.slab_hanami.name=Hanami Slab
 tile.stairs_bloodless_elm.name=Bloodless Elm Stairs
 tile.stairs_hanami.name=Hanami Stairs
+tile.door_bloodless_elm.name=Bloodless Elm Door
+tile.door_hanami.name=Hanami Door
 
 // Armor
 item.iridium_helmet.name=Iridium Helmet
