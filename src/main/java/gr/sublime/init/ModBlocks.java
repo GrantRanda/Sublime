@@ -21,6 +21,7 @@ import gr.sublime.block.BlockCalamagrostis;
 import gr.sublime.block.BlockPlanksBase;
 import gr.sublime.block.BlockSaplingBase;
 import gr.sublime.block.BlockSlabBase;
+import gr.sublime.block.BlockStairsBase;
 import gr.sublime.block.BlockThatch;
 import gr.sublime.item.ItemBlackLotus;
 import gr.sublime.world.gen.feature.WorldGenTreeBloodlessElm;
@@ -53,7 +54,7 @@ public class ModBlocks {
     public static BlockSaplingBase SAPLING_HANAMI = new BlockSaplingBase("sapling_hanami", new WorldGenTreeHanami(false));
     public static BlockDirtBase MUTED_DIRT = new BlockDirtBase("muted_dirt");
     public static BlockMutedGrass MUTED_GRASS = new BlockMutedGrass("muted_grass");
-    public static BlockFarmlandBase MUTED_FARMLAND = new BlockFarmlandBase("muted_farmland", MUTED_DIRT);
+    public static BlockFarmlandBase MUTED_FARMLAND = new BlockFarmlandBase("muted_farmland", ModBlocks.MUTED_DIRT);
     public static BlockFlowerBase FLOWER_ASTRANTIA = new BlockFlowerBase("flower_astrantia");
     public static BlockDoublePlantEterisk DOUBLE_PLANT_ETERISK = new BlockDoublePlantEterisk("double_plant_eterisk");
     public static BlockCalamagrostis CALAMAGROSTIS = new BlockCalamagrostis("calamagrostis");
@@ -67,6 +68,8 @@ public class ModBlocks {
     public static BlockSlabBase SLAB_BLOODLESS_ELM = new BlockSlabBase.Half(Material.WOOD, ModBlocks.SLAB_BLOODLESS_ELM, "slab_bloodless_elm");
     public static BlockSlabBase DOUBLE_SLAB_HANAMI = new BlockSlabBase.Double(Material.WOOD, ModBlocks.SLAB_HANAMI, "double_slab_hanami");
     public static BlockSlabBase SLAB_HANAMI = new BlockSlabBase.Half(Material.WOOD, ModBlocks.SLAB_HANAMI, "slab_hanami");
+    public static BlockStairsBase STAIRS_BLOODLESS_ELM = new BlockStairsBase(ModBlocks.PLANKS_BLOODLESS_ELM.getDefaultState(), "stairs_bloodless_elm");
+    public static BlockStairsBase STAIRS_HANAMI = new BlockStairsBase(ModBlocks.PLANKS_HANAMI.getDefaultState(), "stairs_hanami");
 
     public static void register(IForgeRegistry<Block> registry) {
         registry.registerAll(
@@ -98,7 +101,9 @@ public class ModBlocks {
                 DOUBLE_SLAB_BLOODLESS_ELM,
                 SLAB_BLOODLESS_ELM,
                 DOUBLE_SLAB_HANAMI,
-                SLAB_HANAMI
+                SLAB_HANAMI,
+                STAIRS_BLOODLESS_ELM,
+                STAIRS_HANAMI
         );
     }
 
@@ -126,7 +131,9 @@ public class ModBlocks {
                 FENCE_BLOODLESS_ELM,
                 FENCE_HANAMI,
                 FENCE_GATE_BLOODLESS_ELM,
-                FENCE_GATE_HANAMI
+                FENCE_GATE_HANAMI,
+                STAIRS_BLOODLESS_ELM,
+                STAIRS_HANAMI
         );
 
         items.add(new ItemBlackLotus().setRegistryName(BLACK_LOTUS.getRegistryName()));
@@ -174,7 +181,9 @@ public class ModBlocks {
                 FENCE_GATE_BLOODLESS_ELM,
                 FENCE_GATE_HANAMI,
                 SLAB_BLOODLESS_ELM,
-                SLAB_HANAMI
+                SLAB_HANAMI,
+                STAIRS_BLOODLESS_ELM,
+                STAIRS_HANAMI
         );
     }
 
