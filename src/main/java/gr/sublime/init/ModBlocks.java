@@ -2,6 +2,7 @@ package gr.sublime.init;
 
 import gr.sublime.Main;
 import gr.sublime.block.BlockDirtBase;
+import gr.sublime.block.BlockDoorBase;
 import gr.sublime.block.BlockDoublePlantEterisk;
 import gr.sublime.block.BlockFarmlandBase;
 import gr.sublime.block.BlockFenceBase;
@@ -24,12 +25,14 @@ import gr.sublime.block.BlockSlabBase;
 import gr.sublime.block.BlockStairsBase;
 import gr.sublime.block.BlockThatch;
 import gr.sublime.item.ItemBlackLotus;
+import gr.sublime.item.ItemDoorBase;
 import gr.sublime.world.gen.feature.WorldGenTreeBloodlessElm;
 import gr.sublime.world.gen.feature.WorldGenTreeHanami;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemDoor;
 import net.minecraft.item.ItemSlab;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.registries.IForgeRegistry;
@@ -70,6 +73,8 @@ public class ModBlocks {
     public static BlockSlabBase SLAB_HANAMI = new BlockSlabBase.Half(Material.WOOD, ModBlocks.SLAB_HANAMI, "slab_hanami");
     public static BlockStairsBase STAIRS_BLOODLESS_ELM = new BlockStairsBase(ModBlocks.PLANKS_BLOODLESS_ELM.getDefaultState(), "stairs_bloodless_elm");
     public static BlockStairsBase STAIRS_HANAMI = new BlockStairsBase(ModBlocks.PLANKS_HANAMI.getDefaultState(), "stairs_hanami");
+    public static BlockDoorBase DOOR_BLOODLESS_ELM = new BlockDoorBase(Material.WOOD, "door_bloodless_elm");
+    public static BlockDoorBase DOOR_HANAMI = new BlockDoorBase(Material.WOOD, "door_hanami");
 
     public static void register(IForgeRegistry<Block> registry) {
         registry.registerAll(
@@ -103,7 +108,9 @@ public class ModBlocks {
                 DOUBLE_SLAB_HANAMI,
                 SLAB_HANAMI,
                 STAIRS_BLOODLESS_ELM,
-                STAIRS_HANAMI
+                STAIRS_HANAMI,
+                DOOR_BLOODLESS_ELM,
+                DOOR_HANAMI
         );
     }
 
@@ -136,17 +143,17 @@ public class ModBlocks {
                 STAIRS_HANAMI
         );
 
-        items.add(new ItemBlackLotus().setRegistryName(BLACK_LOTUS.getRegistryName()));
+        items.add(new ItemBlackLotus().setRegistryName(ModBlocks.BLACK_LOTUS.getRegistryName()));
         items.add(
                 new ItemBlock(THATCH) {
                     @Override
                     public int getItemBurnTime(ItemStack itemStack) {
                         return 300;
                     }
-                }.setRegistryName(THATCH.getRegistryName())
+                }.setRegistryName(ModBlocks.THATCH.getRegistryName())
         );
-        items.add(new ItemSlab(SLAB_BLOODLESS_ELM, SLAB_BLOODLESS_ELM, DOUBLE_SLAB_BLOODLESS_ELM).setRegistryName(SLAB_BLOODLESS_ELM.getRegistryName()));
-        items.add(new ItemSlab(SLAB_HANAMI, SLAB_HANAMI, DOUBLE_SLAB_HANAMI).setRegistryName(SLAB_HANAMI.getRegistryName()));
+        items.add(new ItemSlab(SLAB_BLOODLESS_ELM, SLAB_BLOODLESS_ELM, DOUBLE_SLAB_BLOODLESS_ELM).setRegistryName(ModBlocks.SLAB_BLOODLESS_ELM.getRegistryName()));
+        items.add(new ItemSlab(SLAB_HANAMI, SLAB_HANAMI, DOUBLE_SLAB_HANAMI).setRegistryName(ModBlocks.SLAB_HANAMI.getRegistryName()));
 
         for (Item item : items) {
             registry.register(item);

@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top",
+  "textures": {
+    "bottom": "sublime:blocks/door_lower_bloodless_elm",
+    "top": "sublime:blocks/door_upper_bloodless_elm"
+  }
+}
