@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "XX",
+    "X#",
+    " #"
+  ],
+
+  "key":
+  {
+    "#":
+    {
+      "item": "sublime:tungsten_rod"
+    },
+    "X":
+    {
+      "item": "sublime:tungsten_ingot"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:tungsten_axe",
+    "count": 1
+  }
+}

@@ -21,8 +21,8 @@ public class WorldGenOres implements IWorldGenerator {
 
             if (currentBiome.startsWith("Sublime")) {
                 generateOre(ModBlocks.IRIDIUM_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 5, 16, 1 + random.nextInt(4), 6);
-                generateOre(ModBlocks.NIOBIUM_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 16, 64, 4 + random.nextInt(4), 8);
-                generateOre(ModBlocks.TUNGSTEN_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 16, 64, 3 + random.nextInt(3), 7);
+                generateOre(ModBlocks.NIOBIUM_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 16, 64, 4 + random.nextInt(4), 9);
+                generateOre(ModBlocks.TUNGSTEN_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 8, 32, 3 + random.nextInt(3), 7);
             }
         }
     }

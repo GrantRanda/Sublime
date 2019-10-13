@@ -3,6 +3,7 @@ item.iridium.name=Iridium
 item.iridium_rod.name=Iridium Rod
 item.niobium_ingot.name=Niobium Ingot
 item.tungsten_ingot.name=Tungsten Ingot
+item.tungsten_rod.name=Tungsten Rod
 item.door_bloodless_elm.name=Bloodless Elm Door
 item.door_hanami.name=Hanami Door
 
@@ -44,6 +45,10 @@ item.iridium_helmet.name=Iridium Helmet
 item.iridium_chestplate.name=Iridium Chestplate
 item.iridium_leggings.name=Iridium Leggings
 item.iridium_boots.name=Iridium Boots
+item.tungsten_helmet.name=Tungsten Helmet
+item.tungsten_chestplate.name=Tungsten Chestplate
+item.tungsten_leggings.name=Tungsten Leggings
+item.tungsten_boots.name=Tungsten Boots
 
 // Tools
 item.iridium_pickaxe.name=Iridium Pickaxe
@@ -51,6 +56,11 @@ item.iridium_axe.name=Iridium Axe
 item.iridium_shovel.name=Iridium Shovel
 item.iridium_hoe.name=Iridium Hoe
 item.iridium_sword.name=Iridium Sword
+item.tungsten_pickaxe.name=Tungsten Pickaxe
+item.tungsten_axe.name=Tungsten Axe
+item.tungsten_shovel.name=Tungsten Shovel
+item.tungsten_hoe.name=Tungsten Hoe
+item.tungsten_sword.name=Tungsten Sword
 
 // Containers
 container.niobium_chest=Niobium Chest

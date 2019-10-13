@@ -10,6 +10,8 @@ public class BlockOreTungsten extends BlockOreBase {
 
     public BlockOreTungsten(String name) {
         super(name);
+
+        setHarvestLevel("pickaxe", 3);
     }
 
     @Override
