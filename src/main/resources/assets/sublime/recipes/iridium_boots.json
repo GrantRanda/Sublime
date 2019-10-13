@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "X X",
+    "X X"
+  ],
+
+  "key":
+  {
+    "X":
+    {
+      "item": "sublime:iridium"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:iridium_boots",
+    "count": 1
+  }
+}

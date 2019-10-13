@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "XXX",
+    "X X"
+  ],
+
+  "key":
+  {
+    "X":
+    {
+      "item": "sublime:tungsten_ingot"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:tungsten_helmet",
+    "count": 1
+  }
+}
