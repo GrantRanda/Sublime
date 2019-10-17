@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "sublime:blocks/tungsten_furnace_top",
+    "front": "sublime:blocks/tungsten_furnace_front_off",
+    "side": "sublime:blocks/tungsten_furnace_side"
+  }
+}

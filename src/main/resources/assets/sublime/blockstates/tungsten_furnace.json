@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=east":  { "model": "sublime:tungsten_furnace", "y": 90 },
+    "facing=north": { "model": "sublime:tungsten_furnace" },
+    "facing=south": { "model": "sublime:tungsten_furnace", "y": 180 },
+    "facing=west":  { "model": "sublime:tungsten_furnace", "y": 270 }
+  }
+}

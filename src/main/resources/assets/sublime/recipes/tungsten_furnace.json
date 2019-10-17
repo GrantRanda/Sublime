@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "III",
+    "IFI",
+    "III"
+  ],
+
+  "key":
+  {
+    "I":
+    {
+      "item": "sublime:tungsten_ingot"
+    },
+    "F":
+    {
+      "item": "minecraft:furnace"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:tungsten_furnace",
+    "count": 1
+  }
+}

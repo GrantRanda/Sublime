@@ -29,7 +29,7 @@ public class ModRecipes {
         OreDictionary.registerOre("treeSapling", ModBlocks.SAPLING_HANAMI);
 
         // Smelting
-        GameRegistry.addSmelting(ModBlocks.NIOBIUM_ORE, new ItemStack(ModItems.NIOBIUM_INGOT), 0.9f);
-        GameRegistry.addSmelting(ModBlocks.TUNGSTEN_ORE, new ItemStack(ModItems.TUNGSTEN_INGOT), 0.9f);
+        GameRegistry.addSmelting(ModBlocks.NIOBIUM_ORE, new ItemStack(ModItems.NIOBIUM_INGOT), 1.0f);
+        GameRegistry.addSmelting(ModBlocks.TUNGSTEN_ORE, new ItemStack(ModItems.TUNGSTEN_INGOT), 1.0f);
     }
 }
