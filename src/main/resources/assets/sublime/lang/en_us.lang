@@ -12,6 +12,8 @@ tile.iridium_ore.name=Iridium Ore
 tile.niobium_ore.name=Niobium Ore
 tile.tungsten_ore.name=Tungsten Ore
 tile.niobium_chest.name=Niobium Chest
+tile.tungsten_furnace.name=Tungsten Furnace
+tile.tungsten_furnace_lit.name=Tungsten Furnace
 tile.log_bloodless_elm.name=Bloodless Elm Log
 tile.log_hanami.name=Hanami Log
 tile.planks_bloodless_elm.name=Bloodless Elm Planks
@@ -64,6 +66,7 @@ item.tungsten_sword.name=Tungsten Sword
 
 // Containers
 container.niobium_chest=Niobium Chest
+container.tungsten_furnace=Tungsten Furnace
 
 // Creative Tabs
 itemGroup.sublime=Sublime

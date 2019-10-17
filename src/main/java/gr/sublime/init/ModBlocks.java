@@ -15,6 +15,7 @@ import gr.sublime.block.BlockLilyBase;
 import gr.sublime.block.BlockLogBase;
 import gr.sublime.block.BlockMutedGrass;
 import gr.sublime.block.BlockNiobiumChest;
+import gr.sublime.block.BlockTungstenFurnace;
 import gr.sublime.block.BlockOreIridium;
 import gr.sublime.block.BlockOreNiobium;
 import gr.sublime.block.BlockOreTungsten;
@@ -25,14 +26,12 @@ import gr.sublime.block.BlockSlabBase;
 import gr.sublime.block.BlockStairsBase;
 import gr.sublime.block.BlockThatch;
 import gr.sublime.item.ItemBlackLotus;
-import gr.sublime.item.ItemDoorBase;
 import gr.sublime.world.gen.feature.WorldGenTreeBloodlessElm;
 import gr.sublime.world.gen.feature.WorldGenTreeHanami;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemDoor;
 import net.minecraft.item.ItemSlab;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.registries.IForgeRegistry;
@@ -46,6 +45,8 @@ public class ModBlocks {
     public static BlockOreNiobium NIOBIUM_ORE = new BlockOreNiobium("niobium_ore");
     public static BlockOreTungsten TUNGSTEN_ORE = new BlockOreTungsten("tungsten_ore");
     public static BlockNiobiumChest NIOBIUM_CHEST = new BlockNiobiumChest("niobium_chest");
+    public static BlockTungstenFurnace TUNGSTEN_FURNACE = new BlockTungstenFurnace(false, "tungsten_furnace");
+    public static BlockTungstenFurnace TUNGSTEN_FURNACE_LIT = new BlockTungstenFurnace(true, "tungsten_furnace_lit");
     public static BlockLogBase LOG_BLOODLESS_ELM = new BlockLogBase("log_bloodless_elm");
     public static BlockLogBase LOG_HANAMI = new BlockLogBase("log_hanami");
     public static BlockPlanksBase PLANKS_BLOODLESS_ELM = new BlockPlanksBase("planks_bloodless_elm");
@@ -82,6 +83,8 @@ public class ModBlocks {
                 NIOBIUM_ORE,
                 TUNGSTEN_ORE,
                 NIOBIUM_CHEST,
+                TUNGSTEN_FURNACE,
+                TUNGSTEN_FURNACE_LIT,
                 LOG_BLOODLESS_ELM,
                 LOG_HANAMI,
                 PLANKS_BLOODLESS_ELM,
@@ -120,6 +123,8 @@ public class ModBlocks {
                 NIOBIUM_ORE,
                 TUNGSTEN_ORE,
                 NIOBIUM_CHEST,
+                TUNGSTEN_FURNACE,
+                TUNGSTEN_FURNACE_LIT,
                 LOG_BLOODLESS_ELM,
                 LOG_HANAMI,
                 PLANKS_BLOODLESS_ELM,
@@ -166,6 +171,8 @@ public class ModBlocks {
                 NIOBIUM_ORE,
                 TUNGSTEN_ORE,
                 NIOBIUM_CHEST,
+                TUNGSTEN_FURNACE,
+                TUNGSTEN_FURNACE_LIT,
                 LOG_BLOODLESS_ELM,
                 LOG_HANAMI,
                 PLANKS_BLOODLESS_ELM,

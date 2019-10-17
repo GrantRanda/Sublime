@@ -12,4 +12,5 @@ public class Reference {
     public static final String LOGO = "";
 
     public static final int GUI_NIOBIUM_CHEST = 1;
+    public static final int GUI_TUNGSTEN_FURNACE = 2;
 }
