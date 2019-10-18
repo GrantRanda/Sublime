@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "XXX",
+    "X X"
+  ],
+
+  "key":
+  {
+    "X":
+    {
+      "item": "sublime:niobium_ingot"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:niobium_helmet",
+    "count": 1
+  }
+}
