@@ -9,8 +9,8 @@ public class BlockOreBase extends BlockBase {
         super(Material.ROCK, name);
 
         setSoundType(SoundType.METAL);
-        setHardness(3f);
-        setResistance(5f);
+        setHardness(3.0f);
+        setResistance(5.0f);
         setHarvestLevel("pickaxe", 2);
     }
 }

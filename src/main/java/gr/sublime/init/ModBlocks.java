@@ -1,6 +1,7 @@
 package gr.sublime.init;
 
 import gr.sublime.Main;
+import gr.sublime.block.BlockBase;
 import gr.sublime.block.BlockDirtBase;
 import gr.sublime.block.BlockDoorBase;
 import gr.sublime.block.BlockDoublePlantEterisk;
@@ -15,6 +16,7 @@ import gr.sublime.block.BlockLilyBase;
 import gr.sublime.block.BlockLogBase;
 import gr.sublime.block.BlockMutedGrass;
 import gr.sublime.block.BlockNiobiumChest;
+import gr.sublime.block.BlockOreBase;
 import gr.sublime.block.BlockTungstenFurnace;
 import gr.sublime.block.BlockOreIridium;
 import gr.sublime.block.BlockOreNiobium;
@@ -44,6 +46,9 @@ public class ModBlocks {
     public static BlockOreIridium IRIDIUM_ORE = new BlockOreIridium("iridium_ore");
     public static BlockOreNiobium NIOBIUM_ORE = new BlockOreNiobium("niobium_ore");
     public static BlockOreTungsten TUNGSTEN_ORE = new BlockOreTungsten("tungsten_ore");
+    public static BlockOreBase IRIDIUM_BLOCK = new BlockOreBase("iridium_block");
+    public static BlockOreBase NIOBIUM_BLOCK = new BlockOreBase("niobium_block");
+    public static BlockOreBase TUNGSTEN_BLOCK = new BlockOreBase("tungsten_block");
     public static BlockNiobiumChest NIOBIUM_CHEST = new BlockNiobiumChest("niobium_chest");
     public static BlockTungstenFurnace TUNGSTEN_FURNACE = new BlockTungstenFurnace(false, "tungsten_furnace");
     public static BlockTungstenFurnace TUNGSTEN_FURNACE_LIT = new BlockTungstenFurnace(true, "tungsten_furnace_lit");
@@ -82,6 +87,9 @@ public class ModBlocks {
                 IRIDIUM_ORE,
                 NIOBIUM_ORE,
                 TUNGSTEN_ORE,
+                IRIDIUM_BLOCK,
+                NIOBIUM_BLOCK,
+                TUNGSTEN_BLOCK,
                 NIOBIUM_CHEST,
                 TUNGSTEN_FURNACE,
                 TUNGSTEN_FURNACE_LIT,
@@ -122,6 +130,9 @@ public class ModBlocks {
                 IRIDIUM_ORE,
                 NIOBIUM_ORE,
                 TUNGSTEN_ORE,
+                IRIDIUM_BLOCK,
+                NIOBIUM_BLOCK,
+                TUNGSTEN_BLOCK,
                 NIOBIUM_CHEST,
                 TUNGSTEN_FURNACE,
                 TUNGSTEN_FURNACE_LIT,
@@ -170,6 +181,9 @@ public class ModBlocks {
                 IRIDIUM_ORE,
                 NIOBIUM_ORE,
                 TUNGSTEN_ORE,
+                IRIDIUM_BLOCK,
+                NIOBIUM_BLOCK,
+                TUNGSTEN_BLOCK,
                 NIOBIUM_CHEST,
                 TUNGSTEN_FURNACE,
                 TUNGSTEN_FURNACE_LIT,
