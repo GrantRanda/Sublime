@@ -13,6 +13,9 @@ public class ModRecipes {
         OreDictionary.registerOre("oreIridium", ModBlocks.IRIDIUM_ORE);
         OreDictionary.registerOre("oreNiobium", ModBlocks.NIOBIUM_ORE);
         OreDictionary.registerOre("oreNiobium", ModBlocks.TUNGSTEN_ORE);
+        OreDictionary.registerOre("blockIridium", ModBlocks.IRIDIUM_BLOCK);
+        OreDictionary.registerOre("blockNiobium", ModBlocks.NIOBIUM_BLOCK);
+        OreDictionary.registerOre("blockTungsten", ModBlocks.TUNGSTEN_BLOCK);
         OreDictionary.registerOre("logWood", ModBlocks.LOG_BLOODLESS_ELM);
         OreDictionary.registerOre("logWood", ModBlocks.LOG_HANAMI);
         OreDictionary.registerOre("plankWood", ModBlocks.PLANKS_BLOODLESS_ELM);
