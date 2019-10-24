@@ -25,6 +25,7 @@ Features:
 * *Niobium Chest*
 * *Calamagrostis*
 * *Astrantia*
+* *Eterisk*
 * *Black Lotus*
 
 ## Images
