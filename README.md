@@ -1,6 +1,5 @@
 # Sublime
 
-Features:
 * *Sublime Biome*
 * *Muted Dirt*, *Muted Grass*
 * *Bloodless Elm Tree*, *Hanami Tree*
