@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "SPS",
+    "SPS"
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "sublime:planks_hanami"
+    },
+    "S":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:fence_gate_hanami",
+    "count": 1
+  }
+}

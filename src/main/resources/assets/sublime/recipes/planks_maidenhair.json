@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "L"
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "sublime:log_maidenhair"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:planks_maidenhair",
+    "count": 4
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PPP"
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "sublime:planks_hanami"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:slab_hanami",
+    "data": 0,
+    "count": 6
+  }
+}

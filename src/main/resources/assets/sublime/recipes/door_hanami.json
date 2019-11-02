@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PP",
+    "PP",
+    "PP"
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "sublime:planks_hanami"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:door_hanami",
+    "count": 3
+  }
+}

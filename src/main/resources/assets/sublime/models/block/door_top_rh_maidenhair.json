@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top_rh",
+  "textures": {
+    "bottom": "sublime:blocks/door_lower_maidenhair",
+    "top": "sublime:blocks/door_upper_maidenhair"
+  }
+}

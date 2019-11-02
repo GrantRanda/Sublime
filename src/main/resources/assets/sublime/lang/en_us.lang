@@ -6,6 +6,7 @@ item.tungsten_ingot.name=Tungsten Ingot
 item.tungsten_rod.name=Tungsten Rod
 item.door_bloodless_elm.name=Bloodless Elm Door
 item.door_hanami.name=Hanami Door
+item.door_maidenhair.name=Maidenhair Door
 
 // Blocks
 tile.iridium_ore.name=Iridium Ore
@@ -19,13 +20,17 @@ tile.tungsten_furnace.name=Tungsten Furnace
 tile.tungsten_furnace_lit.name=Tungsten Furnace
 tile.log_bloodless_elm.name=Bloodless Elm Log
 tile.log_hanami.name=Hanami Log
+tile.log_maidenhair.name=Maidenhair Log
 tile.planks_bloodless_elm.name=Bloodless Elm Planks
 tile.planks_hanami.name=Hanami Planks
+tile.planks_maidenhair.name=Maidenhair Planks
 tile.leaves_bloodless_elm.name=Bloodless Elm Leaves
 tile.leaves_fallen.name=Fallen Leaves
 tile.leaves_hanami.name=Hanami Leaves
+tile.leaves_maidenhair.name=Maidenhair Leaves
 tile.sapling_bloodless_elm.name=Bloodless Elm Sapling
 tile.sapling_hanami.name=Hanami Sapling
+tile.sapling_maidenhair.name=Maidenhair Sapling
 tile.muted_dirt.name=Muted Dirt
 tile.muted_grass.name=Muted Grass
 tile.muted_farmland.name=Muted Farmland
@@ -36,14 +41,19 @@ tile.black_lotus.name=Black Lotus
 tile.thatch.name=Thatch
 tile.fence_bloodless_elm.name=Bloodless Elm Fence
 tile.fence_hanami.name=Hanami Fence
+tile.fence_maidenhair.name=Maidenhair Fence
 tile.fence_gate_bloodless_elm.name=Bloodless Elm Fence Gate
 tile.fence_gate_hanami.name=Hanami Fence Gate
+tile.fence_gate_maidenhair.name=Maidenhair Fence Gate
 tile.slab_bloodless_elm.name=Bloodless Elm Slab
 tile.slab_hanami.name=Hanami Slab
+tile.slab_maidenhair.name=Maidenhair Slab
 tile.stairs_bloodless_elm.name=Bloodless Elm Stairs
 tile.stairs_hanami.name=Hanami Stairs
+tile.stairs_maidenhair.name=Maidenhair Stairs
 tile.door_bloodless_elm.name=Bloodless Elm Door
 tile.door_hanami.name=Hanami Door
+tile.door_maidenhair.name=Maidenhair Door
 
 // Armor
 item.iridium_helmet.name=Iridium Helmet

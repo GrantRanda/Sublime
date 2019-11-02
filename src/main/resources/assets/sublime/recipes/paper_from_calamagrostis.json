@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "CCC"
+  ],
+
+  "key":
+  {
+    "C":
+    {
+      "item": "sublime:calamagrostis"
+    }
+  },
+
+  "result":
+  {
+    "item": "minecraft:paper",
+    "count": 3
+  }
+}

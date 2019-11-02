@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PSP",
+    "PSP"
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "sublime:planks_bloodless_elm"
+    },
+    "S":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:fence_bloodless_elm",
+    "count": 3
+  }
+}
