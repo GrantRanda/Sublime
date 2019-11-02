@@ -38,6 +38,7 @@ public class ModItems {
     public static final ItemBase TUNGSTEN_ROD = new ItemBase("tungsten_rod");
     public static final ItemDoorBase DOOR_BLOODLESS_ELM = new ItemDoorBase(ModBlocks.DOOR_BLOODLESS_ELM, "door_bloodless_elm");
     public static final ItemDoorBase DOOR_HANAMI = new ItemDoorBase(ModBlocks.DOOR_HANAMI, "door_hanami");
+    public static final ItemDoorBase DOOR_MAIDENHAIR = new ItemDoorBase(ModBlocks.DOOR_MAIDENHAIR, "door_maidenhair");
 
     // Armor
     public static final ArmorBase IRIDIUM_HELMET = new ArmorBase("iridium_helmet", ARMOR_IRIDIUM, 5, EntityEquipmentSlot.HEAD, IRIDIUM);
@@ -105,7 +106,8 @@ public class ModItems {
                 TUNGSTEN_LEGGINGS,
                 TUNGSTEN_BOOTS,
                 DOOR_BLOODLESS_ELM,
-                DOOR_HANAMI
+                DOOR_HANAMI,
+                DOOR_MAIDENHAIR
         );
     }
 
@@ -144,7 +146,8 @@ public class ModItems {
                 TUNGSTEN_LEGGINGS,
                 TUNGSTEN_BOOTS,
                 DOOR_BLOODLESS_ELM,
-                DOOR_HANAMI
+                DOOR_HANAMI,
+                DOOR_MAIDENHAIR
         );
     }
 

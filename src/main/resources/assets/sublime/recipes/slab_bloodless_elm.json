@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PPP"
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "sublime:planks_bloodless_elm"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:slab_bloodless_elm",
+    "data": 0,
+    "count": 6
+  }
+}

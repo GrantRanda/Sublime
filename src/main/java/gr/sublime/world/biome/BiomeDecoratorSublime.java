@@ -56,6 +56,7 @@ public class BiomeDecoratorSublime extends BiomeDecoratorBase {
         if (generateFalls) {
             generateFalls(worldIn, random, chunkPos);
         }
+
         MinecraftForge.EVENT_BUS.post(new DecorateBiomeEvent.Post(worldIn, random, chunkPos));
     }
 
@@ -70,7 +71,7 @@ public class BiomeDecoratorSublime extends BiomeDecoratorBase {
     private void generateBushes(World worldIn, Biome biomeIn, Random random, BlockPos chunkPos) {
         int bushesToGen = bushesPerChunk;
 
-        if (random.nextFloat() < 0.1f) {
+        if (random.nextFloat() < 0.3f) {
             ++bushesToGen;
         }
 

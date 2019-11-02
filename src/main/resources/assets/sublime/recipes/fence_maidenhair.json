@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PSP",
+    "PSP"
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "sublime:planks_maidenhair"
+    },
+    "S":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:fence_maidenhair",
+    "count": 3
+  }
+}

@@ -1,6 +1,7 @@
 package gr.sublime.world.gen.feature;
 
 import gr.sublime.init.ModBlocks;
+import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.EnumFacing;
@@ -16,7 +17,7 @@ public class WorldGenTreeHanami extends WorldGenTreeBase {
         super(parShouldNotify);
 
         setMinTreeHeight(14);
-        setBlockStateLeaves(ModBlocks.LEAVES_HANAMI.getDefaultState());
+        setBlockStateLeaves(ModBlocks.LEAVES_HANAMI.getDefaultState().withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false)));
         setBlockStateWood(ModBlocks.LOG_HANAMI.getDefaultState());
     }
 

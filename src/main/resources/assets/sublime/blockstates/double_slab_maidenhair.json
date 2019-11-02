@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "variant=default": {
+      "model": "sublime:double_slab_maidenhair"
+    }
+  }
+}
