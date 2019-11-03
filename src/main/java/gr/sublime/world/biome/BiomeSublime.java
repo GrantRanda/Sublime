@@ -58,7 +58,7 @@ public class BiomeSublime extends BiomeBase {
 
     @Override
     public BlockBush pickRandomFlowerModded(Random rand, BlockPos pos) {
-        return ModBlocks.FLOWER_ASTRANTIA;
+        return rand.nextInt(2) > 0 ? ModBlocks.FLOWER_ASTRANTIA : ModBlocks.FLOWER_CHYSANTHEMUM;
     }
 
     @Override
@@ -70,6 +70,7 @@ public class BiomeSublime extends BiomeBase {
     protected void addFlowers() {
         flowers.clear();
         addFlower(ModBlocks.FLOWER_ASTRANTIA.getDefaultState(), 20);
+        addFlower(ModBlocks.FLOWER_CHYSANTHEMUM.getDefaultState(), 20);
     }
 
     @Override
