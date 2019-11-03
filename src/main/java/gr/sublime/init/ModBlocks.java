@@ -71,6 +71,7 @@ public class ModBlocks {
     public static BlockMutedGrass MUTED_GRASS = new BlockMutedGrass("muted_grass");
     public static BlockFarmlandBase MUTED_FARMLAND = new BlockFarmlandBase("muted_farmland", ModBlocks.MUTED_DIRT);
     public static BlockFlowerBase FLOWER_ASTRANTIA = new BlockFlowerBase("flower_astrantia");
+    public static BlockFlowerBase FLOWER_CHYSANTHEMUM = new BlockFlowerBase("flower_chrysanthemum");
     public static BlockDoublePlantEterisk DOUBLE_PLANT_ETERISK = new BlockDoublePlantEterisk("double_plant_eterisk");
     public static BlockCalamagrostis CALAMAGROSTIS = new BlockCalamagrostis("calamagrostis");
     public static BlockLilyBase BLACK_LOTUS = new BlockLilyBase("black_lotus");
@@ -122,6 +123,7 @@ public class ModBlocks {
                 MUTED_GRASS,
                 MUTED_FARMLAND,
                 FLOWER_ASTRANTIA,
+                FLOWER_CHYSANTHEMUM,
                 DOUBLE_PLANT_ETERISK,
                 CALAMAGROSTIS,
                 BLACK_LOTUS,
@@ -175,6 +177,7 @@ public class ModBlocks {
                 MUTED_GRASS,
                 MUTED_FARMLAND,
                 FLOWER_ASTRANTIA,
+                FLOWER_CHYSANTHEMUM,
                 DOUBLE_PLANT_ETERISK,
                 CALAMAGROSTIS,
                 FENCE_BLOODLESS_ELM,
@@ -234,6 +237,7 @@ public class ModBlocks {
                 MUTED_GRASS,
                 MUTED_FARMLAND,
                 FLOWER_ASTRANTIA,
+                FLOWER_CHYSANTHEMUM,
                 DOUBLE_PLANT_ETERISK,
                 CALAMAGROSTIS,
                 BLACK_LOTUS,
