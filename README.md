@@ -2,7 +2,7 @@
 
 * *Sublime Biome*
 * *Muted Dirt*, *Muted Grass*
-* *Bloodless Elm Tree*, *Hanami Tree*
+* *Bloodless Elm Tree*, *Hanami Tree*, *Maidenhair Tree*
   * Sapling
   * Leaves
   * Log
@@ -24,6 +24,7 @@
 * *Niobium Chest*
 * *Calamagrostis*
 * *Astrantia*
+* *Chrysanthemum*
 * *Eterisk*
 * *Black Lotus*
 
