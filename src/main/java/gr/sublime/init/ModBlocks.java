@@ -27,7 +27,7 @@ import gr.sublime.block.BlockSlabBase;
 import gr.sublime.block.BlockStairsBase;
 import gr.sublime.block.BlockThatch;
 import gr.sublime.block.BlockTungstenFurnace;
-import gr.sublime.item.ItemBlackLotus;
+import gr.sublime.item.ItemLotus;
 import gr.sublime.world.gen.feature.WorldGenTreeBloodlessElm;
 import gr.sublime.world.gen.feature.WorldGenTreeHanami;
 import gr.sublime.world.gen.feature.WorldGenTreeYedoensis;
@@ -73,7 +73,7 @@ public class ModBlocks {
     public static BlockFlowerBase FLOWER_CHYSANTHEMUM = new BlockFlowerBase("flower_chrysanthemum");
     public static BlockDoublePlantEterisk DOUBLE_PLANT_ETERISK = new BlockDoublePlantEterisk("double_plant_eterisk");
     public static BlockCalamagrostis CALAMAGROSTIS = new BlockCalamagrostis("calamagrostis");
-    public static BlockLilyBase BLACK_LOTUS = new BlockLilyBase("black_lotus");
+    public static BlockLilyBase LOTUS = new BlockLilyBase("lotus");
     public static BlockThatch THATCH = new BlockThatch("thatch");
     public static BlockFenceBase FENCE_BLOODLESS_ELM = new BlockFenceBase(Material.WOOD, "fence_bloodless_elm");
     public static BlockFenceBase FENCE_HANAMI = new BlockFenceBase(Material.WOOD, "fence_hanami");
@@ -125,7 +125,7 @@ public class ModBlocks {
                 FLOWER_CHYSANTHEMUM,
                 DOUBLE_PLANT_ETERISK,
                 CALAMAGROSTIS,
-                BLACK_LOTUS,
+                LOTUS,
                 THATCH,
                 FENCE_BLOODLESS_ELM,
                 FENCE_HANAMI,
@@ -190,7 +190,7 @@ public class ModBlocks {
                 STAIRS_YEDOENSIS
         );
 
-        items.add(new ItemBlackLotus().setRegistryName(ModBlocks.BLACK_LOTUS.getRegistryName()));
+        items.add(new ItemLotus().setRegistryName(ModBlocks.LOTUS.getRegistryName()));
         items.add(
                 new ItemBlock(THATCH) {
                     @Override
@@ -239,7 +239,7 @@ public class ModBlocks {
                 FLOWER_CHYSANTHEMUM,
                 DOUBLE_PLANT_ETERISK,
                 CALAMAGROSTIS,
-                BLACK_LOTUS,
+                LOTUS,
                 THATCH,
                 FENCE_BLOODLESS_ELM,
                 FENCE_HANAMI,

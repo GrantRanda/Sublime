@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "sublime:blocks/black_lotus"
+    "layer0": "sublime:blocks/lotus"
   }
 }

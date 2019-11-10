@@ -19,10 +19,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
-public class ItemBlackLotus extends ItemBlock {
+public class ItemLotus extends ItemBlock {
 
-    public ItemBlackLotus() {
-        super(ModBlocks.BLACK_LOTUS);
+    public ItemLotus() {
+        super(ModBlocks.LOTUS);
     }
 
     @Override
@@ -46,13 +46,13 @@ public class ItemBlackLotus extends ItemBlock {
                 if (iblockstate.getMaterial() == Material.WATER && ((Integer) iblockstate.getValue(BlockLiquid.LEVEL)).intValue() == 0 && worldIn.isAirBlock(blockpos1)) {
                     // special case for handling block placement with water lilies
                     net.minecraftforge.common.util.BlockSnapshot blocksnapshot = net.minecraftforge.common.util.BlockSnapshot.getBlockSnapshot(worldIn, blockpos1);
-                    worldIn.setBlockState(blockpos1, ModBlocks.BLACK_LOTUS.getDefaultState());
+                    worldIn.setBlockState(blockpos1, ModBlocks.LOTUS.getDefaultState());
                     if (net.minecraftforge.event.ForgeEventFactory.onPlayerBlockPlace(playerIn, blocksnapshot, net.minecraft.util.EnumFacing.UP, handIn).isCanceled()) {
                         blocksnapshot.restore(true, false);
                         return new ActionResult<ItemStack>(EnumActionResult.FAIL, itemstack);
                     }
 
-                    worldIn.setBlockState(blockpos1, ModBlocks.BLACK_LOTUS.getDefaultState(), 11);
+                    worldIn.setBlockState(blockpos1, ModBlocks.LOTUS.getDefaultState(), 11);
 
                     if (playerIn instanceof EntityPlayerMP) {
                         CriteriaTriggers.PLACED_BLOCK.trigger((EntityPlayerMP) playerIn, blockpos1, itemstack);
