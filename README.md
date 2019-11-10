@@ -26,7 +26,7 @@
 * *Astrantia*
 * *Chrysanthemum*
 * *Eterisk*
-* *Black Lotus*
+* *Lotus*
 
 ## Images
 
