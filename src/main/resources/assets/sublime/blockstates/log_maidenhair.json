@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "axis=y":  { "model": "sublime:log_maidenhair" },
-    "axis=z":   { "model": "sublime:log_maidenhair", "x": 90 },
-    "axis=x":   { "model": "sublime:log_maidenhair", "x": 90, "y": 90 },
-    "axis=none": { "model": "sublime:log_maidenhair_bark" }
-  }
-}

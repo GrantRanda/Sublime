@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "side": "sublime:blocks/log_yedoensis",
+    "end": "sublime:blocks/log_yedoensis_top"
+  }
+}

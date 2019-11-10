@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PSP",
+    "PSP"
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "sublime:planks_yedoensis"
+    },
+    "S":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:fence_yedoensis",
+    "count": 3
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/half_slab",
-  "textures": {
-    "bottom": "sublime:blocks/planks_maidenhair",
-    "top": "sublime:blocks/planks_maidenhair",
-    "side": "sublime:blocks/planks_maidenhair"
-  }
-}

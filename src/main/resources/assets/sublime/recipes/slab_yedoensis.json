@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "PPP"
+  ],
+
+  "key":
+  {
+    "P":
+    {
+      "item": "sublime:planks_yedoensis"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:slab_yedoensis",
+    "data": 0,
+    "count": 6
+  }
+}

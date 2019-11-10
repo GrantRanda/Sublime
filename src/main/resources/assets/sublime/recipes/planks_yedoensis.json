@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "L"
+  ],
+
+  "key":
+  {
+    "L":
+    {
+      "item": "sublime:log_yedoensis"
+    }
+  },
+
+  "result":
+  {
+    "item": "sublime:planks_yedoensis",
+    "count": 4
+  }
+}
