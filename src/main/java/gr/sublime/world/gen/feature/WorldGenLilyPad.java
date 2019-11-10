@@ -17,8 +17,8 @@ public class WorldGenLilyPad extends WorldGenerator {
                 int k = position.getY() + rand.nextInt(4) - rand.nextInt(4);
                 int l = position.getZ() + rand.nextInt(8) - rand.nextInt(8);
 
-                if (worldIn.isAirBlock(new BlockPos(j, k, l)) && ModBlocks.BLACK_LOTUS.canPlaceBlockAt(worldIn, new BlockPos(j, k, l))) {
-                    worldIn.setBlockState(new BlockPos(j, k, l), ModBlocks.BLACK_LOTUS.getDefaultState(), 2);
+                if (worldIn.isAirBlock(new BlockPos(j, k, l)) && ModBlocks.LOTUS.canPlaceBlockAt(worldIn, new BlockPos(j, k, l))) {
+                    worldIn.setBlockState(new BlockPos(j, k, l), ModBlocks.LOTUS.getDefaultState(), 2);
                 }
             }
 

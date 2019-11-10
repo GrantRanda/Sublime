@@ -1,8 +1,8 @@
 {
   "ambientocclusion": false,
   "textures": {
-    "particle": "sublime:blocks/black_lotus",
-    "texture": "sublime:blocks/black_lotus"
+    "particle": "sublime:blocks/lotus",
+    "texture": "sublime:blocks/lotus"
   },
   "elements": [
     {   "from": [ 0, 0.25, 0 ],

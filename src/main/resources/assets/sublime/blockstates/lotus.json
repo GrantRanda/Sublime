@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "normal": [
+      { "model": "sublime:lotus" },
+      { "model": "sublime:lotus", "y": 90 },
+      { "model": "sublime:lotus", "y": 180 },
+      { "model": "sublime:lotus", "y": 270 }
+    ]
+  }
+}
