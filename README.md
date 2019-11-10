@@ -2,7 +2,7 @@
 
 * *Sublime Biome*
 * *Muted Dirt*, *Muted Grass*
-* *Bloodless Elm Tree*, *Hanami Tree*, *Maidenhair Tree*
+* *Bloodless Elm Tree*, *Hanami Tree*, *Yedoensis Tree*
   * Sapling
   * Leaves
   * Log
