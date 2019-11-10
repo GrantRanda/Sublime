@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "axis=y":  { "model": "sublime:log_yedoensis" },
+    "axis=z":   { "model": "sublime:log_yedoensis", "x": 90 },
+    "axis=x":   { "model": "sublime:log_yedoensis", "x": 90, "y": 90 },
+    "axis=none": { "model": "sublime:log_yedoensis_bark" }
+  }
+}

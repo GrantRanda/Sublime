@@ -18,14 +18,14 @@ public class ModRecipes {
         OreDictionary.registerOre("blockTungsten", ModBlocks.TUNGSTEN_BLOCK);
         OreDictionary.registerOre("logWood", ModBlocks.LOG_BLOODLESS_ELM);
         OreDictionary.registerOre("logWood", ModBlocks.LOG_HANAMI);
-        OreDictionary.registerOre("logWood", ModBlocks.LOG_MAIDENHAIR);
+        OreDictionary.registerOre("logWood", ModBlocks.LOG_YEDOENSIS);
         OreDictionary.registerOre("plankWood", ModBlocks.PLANKS_BLOODLESS_ELM);
         OreDictionary.registerOre("plankWood", ModBlocks.PLANKS_HANAMI);
-        OreDictionary.registerOre("plankWood", ModBlocks.PLANKS_MAIDENHAIR);
+        OreDictionary.registerOre("plankWood", ModBlocks.PLANKS_YEDOENSIS);
         OreDictionary.registerOre("treeLeaves", ModBlocks.LEAVES_BLOODLESS_ELM);
         OreDictionary.registerOre("treeLeaves", ModBlocks.LEAVES_FALLEN);
         OreDictionary.registerOre("treeLeaves", ModBlocks.LEAVES_HANAMI);
-        OreDictionary.registerOre("treeLeaves", ModBlocks.LEAVES_MAIDENHAIR);
+        OreDictionary.registerOre("treeLeaves", ModBlocks.LEAVES_YEDOENSIS);
 
         // --Items
         OreDictionary.registerOre("gemIridium", ModItems.IRIDIUM);
@@ -33,7 +33,7 @@ public class ModRecipes {
         OreDictionary.registerOre("ingotNiobium", ModItems.TUNGSTEN_INGOT);
         OreDictionary.registerOre("treeSapling", ModBlocks.SAPLING_BLOODLESS_ELM);
         OreDictionary.registerOre("treeSapling", ModBlocks.SAPLING_HANAMI);
-        OreDictionary.registerOre("treeSapling", ModBlocks.SAPLING_MAIDENHAIR);
+        OreDictionary.registerOre("treeSapling", ModBlocks.SAPLING_YEDOENSIS);
 
         // Smelting
         GameRegistry.addSmelting(ModBlocks.IRIDIUM_ORE, new ItemStack(ModItems.IRIDIUM), 1.2f);

@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=bottom,variant=default": { "model": "sublime:half_slab_yedoensis" },
+    "half=top,variant=default": { "model": "sublime:upper_slab_yedoensis" }
+  }
+}

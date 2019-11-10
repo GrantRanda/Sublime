@@ -4,7 +4,7 @@ import gr.sublime.block.BlockDoublePlantBase;
 import gr.sublime.init.ModBlocks;
 import gr.sublime.world.gen.feature.WorldGenTreeBloodlessElm;
 import gr.sublime.world.gen.feature.WorldGenTreeHanami;
-import gr.sublime.world.gen.feature.WorldGenTreeMaidenhair;
+import gr.sublime.world.gen.feature.WorldGenTreeYedoensis;
 import net.minecraft.block.BlockBush;
 import net.minecraft.entity.monster.EntityCreeper;
 import net.minecraft.entity.monster.EntityEnderman;
@@ -16,6 +16,9 @@ import net.minecraft.entity.monster.EntityZombie;
 import net.minecraft.entity.monster.EntityZombieVillager;
 import net.minecraft.entity.passive.EntityBat;
 import net.minecraft.entity.passive.EntityCow;
+import net.minecraft.entity.passive.EntityDonkey;
+import net.minecraft.entity.passive.EntityHorse;
+import net.minecraft.entity.passive.EntityPig;
 import net.minecraft.entity.passive.EntityRabbit;
 import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.entity.passive.EntitySquid;
@@ -31,7 +34,7 @@ public class BiomeSublime extends BiomeBase {
 
     private WorldGenTreeBloodlessElm worldGenTreeBloodlessElm = new WorldGenTreeBloodlessElm(false);
     private WorldGenTreeHanami worldGenTreeHanami = new WorldGenTreeHanami(false);
-    private WorldGenTreeMaidenhair worldGenTreeMaidenhair = new WorldGenTreeMaidenhair(false);
+    private WorldGenTreeYedoensis worldGenTreeYedoensis = new WorldGenTreeYedoensis(false);
 
     public BiomeSublime(BiomeProperties properties) {
         super(properties);
@@ -51,7 +54,7 @@ public class BiomeSublime extends BiomeBase {
             return worldGenTreeHanami;
         }
         if (par1Random.nextInt(8) == 0) {
-            return worldGenTreeMaidenhair;
+            return worldGenTreeYedoensis;
         }
         return worldGenTreeBloodlessElm;
     }
@@ -79,9 +82,11 @@ public class BiomeSublime extends BiomeBase {
         spawnableMonsterList.clear();
         spawnableWaterCreatureList.clear();
         spawnableCaveCreatureList.clear();
-        spawnableCreatureList.add(new Biome.SpawnListEntry(EntitySheep.class, 10, 3, 4));
-        spawnableCreatureList.add(new Biome.SpawnListEntry(EntityCow.class, 8, 2, 4));
-        spawnableCreatureList.add(new Biome.SpawnListEntry(EntityRabbit.class, 7, 3, 4));
+        spawnableCreatureList.add(new Biome.SpawnListEntry(EntitySheep.class, 11, 2, 4));
+        spawnableCreatureList.add(new Biome.SpawnListEntry(EntityCow.class, 9, 2, 4));
+        spawnableCreatureList.add(new Biome.SpawnListEntry(EntityPig.class, 10, 2, 4));
+        spawnableCreatureList.add(new Biome.SpawnListEntry(EntityHorse.class, 6, 2, 6));
+        spawnableCreatureList.add(new Biome.SpawnListEntry(EntityDonkey.class, 3, 1, 3));
         spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySpider.class, 100, 4, 4));
         spawnableMonsterList.add(new Biome.SpawnListEntry(EntityZombie.class, 95, 4, 4));
         spawnableMonsterList.add(new Biome.SpawnListEntry(EntityZombieVillager.class, 5, 1, 1));
