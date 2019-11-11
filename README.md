@@ -30,8 +30,8 @@
 
 ## Images
 
-![Display](screenshots/display.png)
+![Display](images/screenshots/display.png)
 
-![Biome 1](screenshots/biome1.png)
+![Biome 1](images/screenshots/biome1.png)
 
-![Biome 2](screenshots/biome2.png)
+![Biome 2](images/screenshots/biome2.png)
