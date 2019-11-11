@@ -35,7 +35,7 @@ public class ModConfig {
     public static boolean customWaterColor = true;
 
     @Config.Name("Tungsten Armor Effects")
-    @Config.Comment("Controls Tungsten Armor potion effects color")
+    @Config.Comment("Controls Tungsten Armor potion effects")
     public static boolean tungstenArmorEffects = true;
 
     public static class WorldGenerationCat {
