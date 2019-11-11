@@ -1,5 +1,6 @@
 package gr.sublime.init;
 
+import gr.sublime.config.ModConfig;
 import gr.sublime.util.Reference;
 import gr.sublime.world.biome.BiomeBase;
 import gr.sublime.world.biome.BiomeSublime;
@@ -15,7 +16,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @GameRegistry.ObjectHolder(Reference.ID)
 public class ModBiomes {
     public static final BiomeBase SUBLIME = new BiomeSublime(new Biome.BiomeProperties("Sublime")
-            .setWaterColor(0x59FF3E)
+            .setWaterColor(ModConfig.customWaterColor ? 0x59FF3E : 16777215)
             .setBaseHeight(-0.3f)
             .setHeightVariation(0.6f)
             .setTemperature(0.6f));

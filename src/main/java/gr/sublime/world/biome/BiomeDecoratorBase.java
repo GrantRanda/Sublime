@@ -138,11 +138,14 @@ public class BiomeDecoratorBase extends BiomeDecorator {
                 int treeX = random.nextInt(16) + 8;
                 int treeZ = random.nextInt(16) + 8;
                 WorldGenAbstractTree treeGen = biomeIn.getRandomTreeFeature(random);
-                treeGen.setDecorationDefaults();
-                BlockPos blockpos = worldIn.getHeight(chunkPos.add(treeX, 0, treeZ));
 
-                if (treeGen.generate(worldIn, random, blockpos)) {
-                    treeGen.generateSaplings(worldIn, random, blockpos);
+                if (treeGen != null) {
+                    treeGen.setDecorationDefaults();
+                    BlockPos blockpos = worldIn.getHeight(chunkPos.add(treeX, 0, treeZ));
+
+                    if (treeGen.generate(worldIn, random, blockpos)) {
+                        treeGen.generateSaplings(worldIn, random, blockpos);
+                    }
                 }
             }
     }

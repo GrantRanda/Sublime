@@ -1,6 +1,7 @@
 package gr.sublime.world.biome;
 
 import gr.sublime.block.BlockDoublePlantBase;
+import gr.sublime.config.ModConfig;
 import gr.sublime.world.gen.feature.WorldGenBushes;
 import gr.sublime.world.gen.feature.WorldGenDoublePlants;
 import gr.sublime.world.gen.feature.WorldGenFlowers;
@@ -46,12 +47,25 @@ public class BiomeDecoratorSublime extends BiomeDecoratorBase {
         generate(worldIn, random, chunkPos, DecorateBiomeEvent.Decorate.EventType.SAND_PASS2, gravelGen, gravelPatchesPerChunk);
         generate(worldIn, random, chunkPos, DecorateBiomeEvent.Decorate.EventType.SAND_PASS2, gravelGen, gravelPatchesPerChunk);
         generateTrees(worldIn, biomeIn, random, chunkPos);
-        generateBushes(worldIn, biomeIn, random, chunkPos);
+
+        if (ModConfig.worldGenerationCat.genFallenLeaves) {
+            generateBushes(worldIn, biomeIn, random, chunkPos);
+        }
+
         generateFlowers(worldIn, (BiomeBase) biomeIn, random, chunkPos);
         generateDoublePlants(worldIn, (BiomeBase) biomeIn, random, chunkPos);
-        generateCalamagrostis(worldIn, (BiomeBase) biomeIn, random, chunkPos);
-        generateLilyPads(worldIn, (BiomeBase) biomeIn, random, chunkPos);
-        generateGrass(worldIn, biomeIn, random, chunkPos);
+
+        if (ModConfig.worldGenerationCat.genCalamagrostis) {
+            generateCalamagrostis(worldIn, (BiomeBase) biomeIn, random, chunkPos);
+        }
+
+        if (ModConfig.worldGenerationCat.genLotus) {
+            generateLilyPads(worldIn, (BiomeBase) biomeIn, random, chunkPos);
+        }
+
+        if (ModConfig.worldGenerationCat.genTallGrass) {
+            generateGrass(worldIn, biomeIn, random, chunkPos);
+        }
 
         if (generateFalls) {
             generateFalls(worldIn, random, chunkPos);
@@ -161,12 +175,14 @@ public class BiomeDecoratorSublime extends BiomeDecoratorBase {
 
                 BlockDoublePlantBase plant = biomeIn.pickRandomDoublePlantModded(random, chunkPos);
 
-                doublePlantGen.setPlant(plant);
+                if (plant != null) {
+                    doublePlantGen.setPlant(plant);
 
-                if (yRange > 0) {
-                    int flowerY = random.nextInt(yRange);
-                    BlockPos flowerBlockPos = chunkPos.add(flowerX, flowerY, flowerZ);
-                    doublePlantGen.generate(worldIn, random, flowerBlockPos);
+                    if (yRange > 0) {
+                        int flowerY = random.nextInt(yRange);
+                        BlockPos flowerBlockPos = chunkPos.add(flowerX, flowerY, flowerZ);
+                        doublePlantGen.generate(worldIn, random, flowerBlockPos);
+                    }
                 }
             }
     }
@@ -180,12 +196,14 @@ public class BiomeDecoratorSublime extends BiomeDecoratorBase {
 
                 BlockBush flower = biomeIn.pickRandomFlowerModded(random, chunkPos);
 
-                flowerGen.setFlower(flower);
+                if (flower != null) {
+                    flowerGen.setFlower(flower);
 
-                if (yRange > 0) {
-                    int flowerY = random.nextInt(yRange);
-                    BlockPos flowerBlockPos = chunkPos.add(flowerX, flowerY, flowerZ);
-                    flowerGen.generate(worldIn, random, flowerBlockPos);
+                    if (yRange > 0) {
+                        int flowerY = random.nextInt(yRange);
+                        BlockPos flowerBlockPos = chunkPos.add(flowerX, flowerY, flowerZ);
+                        flowerGen.generate(worldIn, random, flowerBlockPos);
+                    }
                 }
             }
     }

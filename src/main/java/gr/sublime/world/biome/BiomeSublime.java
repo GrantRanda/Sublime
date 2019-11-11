@@ -1,6 +1,7 @@
 package gr.sublime.world.biome;
 
 import gr.sublime.block.BlockDoublePlantBase;
+import gr.sublime.config.ModConfig;
 import gr.sublime.init.ModBlocks;
 import gr.sublime.world.gen.feature.WorldGenTreeBloodlessElm;
 import gr.sublime.world.gen.feature.WorldGenTreeHanami;
@@ -19,7 +20,6 @@ import net.minecraft.entity.passive.EntityCow;
 import net.minecraft.entity.passive.EntityDonkey;
 import net.minecraft.entity.passive.EntityHorse;
 import net.minecraft.entity.passive.EntityPig;
-import net.minecraft.entity.passive.EntityRabbit;
 import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.entity.passive.EntitySquid;
 import net.minecraft.util.math.BlockPos;
@@ -50,23 +50,35 @@ public class BiomeSublime extends BiomeBase {
 
     @Override
     public WorldGenAbstractTree getRandomTreeFeature(Random par1Random) {
-        if (par1Random.nextInt(2) == 0) {
+        if (ModConfig.worldGenerationCat.treeGenHanami && par1Random.nextInt(2) == 0) {
             return worldGenTreeHanami;
         }
-        if (par1Random.nextInt(8) == 0) {
+        if (ModConfig.worldGenerationCat.treeGenYedoensis && par1Random.nextInt(8) == 0) {
             return worldGenTreeYedoensis;
         }
-        return worldGenTreeBloodlessElm;
+        if (ModConfig.worldGenerationCat.treeGenBloodlessElm) {
+            return worldGenTreeBloodlessElm;
+        }
+        return null;
     }
 
     @Override
     public BlockBush pickRandomFlowerModded(Random rand, BlockPos pos) {
-        return rand.nextInt(2) > 0 ? ModBlocks.FLOWER_ASTRANTIA : ModBlocks.FLOWER_CHYSANTHEMUM;
+        if (ModConfig.worldGenerationCat.flowerGenAstrantia && rand.nextInt(2) > 0) {
+            return ModBlocks.FLOWER_ASTRANTIA;
+        }
+        if (ModConfig.worldGenerationCat.flowerGenChrysanthemum) {
+            return ModBlocks.FLOWER_CHYSANTHEMUM;
+        }
+        return null;
     }
 
     @Override
     public BlockDoublePlantBase pickRandomDoublePlantModded(Random rand, BlockPos pos) {
-        return ModBlocks.DOUBLE_PLANT_ETERISK;
+        if (ModConfig.worldGenerationCat.doublePlantGenEterisk) {
+            return ModBlocks.DOUBLE_PLANT_ETERISK;
+        }
+        return null;
     }
 
     @Override
@@ -82,21 +94,21 @@ public class BiomeSublime extends BiomeBase {
         spawnableMonsterList.clear();
         spawnableWaterCreatureList.clear();
         spawnableCaveCreatureList.clear();
-        spawnableCreatureList.add(new Biome.SpawnListEntry(EntitySheep.class, 11, 2, 4));
-        spawnableCreatureList.add(new Biome.SpawnListEntry(EntityCow.class, 9, 2, 4));
-        spawnableCreatureList.add(new Biome.SpawnListEntry(EntityPig.class, 10, 2, 4));
-        spawnableCreatureList.add(new Biome.SpawnListEntry(EntityHorse.class, 6, 2, 6));
-        spawnableCreatureList.add(new Biome.SpawnListEntry(EntityDonkey.class, 3, 1, 3));
-        spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySpider.class, 100, 4, 4));
-        spawnableMonsterList.add(new Biome.SpawnListEntry(EntityZombie.class, 95, 4, 4));
-        spawnableMonsterList.add(new Biome.SpawnListEntry(EntityZombieVillager.class, 5, 1, 1));
-        spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySkeleton.class, 100, 4, 4));
-        spawnableMonsterList.add(new Biome.SpawnListEntry(EntityCreeper.class, 100, 4, 4));
-        spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySlime.class, 100, 4, 4));
-        spawnableMonsterList.add(new Biome.SpawnListEntry(EntityEnderman.class, 10, 1, 4));
-        spawnableMonsterList.add(new Biome.SpawnListEntry(EntityWitch.class, 5, 1, 1));
-        spawnableWaterCreatureList.add(new Biome.SpawnListEntry(EntitySquid.class, 10, 4, 4));
-        spawnableCaveCreatureList.add(new Biome.SpawnListEntry(EntityBat.class, 10, 8, 8));
+        if (ModConfig.passiveMobSpawningCat.spawnSheep) spawnableCreatureList.add(new Biome.SpawnListEntry(EntitySheep.class, 11, 2, 4));
+        if (ModConfig.passiveMobSpawningCat.spawnCow) spawnableCreatureList.add(new Biome.SpawnListEntry(EntityCow.class, 9, 2, 4));
+        if (ModConfig.passiveMobSpawningCat.spawnPig) spawnableCreatureList.add(new Biome.SpawnListEntry(EntityPig.class, 10, 2, 4));
+        if (ModConfig.passiveMobSpawningCat.spawnHorse) spawnableCreatureList.add(new Biome.SpawnListEntry(EntityHorse.class, 6, 2, 6));
+        if (ModConfig.passiveMobSpawningCat.spawnDonkey) spawnableCreatureList.add(new Biome.SpawnListEntry(EntityDonkey.class, 3, 1, 3));
+        if (ModConfig.hostileMobSpawningCat.spawnSpider) spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySpider.class, 100, 4, 4));
+        if (ModConfig.hostileMobSpawningCat.spawnZombie) spawnableMonsterList.add(new Biome.SpawnListEntry(EntityZombie.class, 95, 4, 4));
+        if (ModConfig.hostileMobSpawningCat.spawnZombieVillager) spawnableMonsterList.add(new Biome.SpawnListEntry(EntityZombieVillager.class, 5, 1, 1));
+        if (ModConfig.hostileMobSpawningCat.spawnSkeleton) spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySkeleton.class, 100, 4, 4));
+        if (ModConfig.hostileMobSpawningCat.spawnCreeper) spawnableMonsterList.add(new Biome.SpawnListEntry(EntityCreeper.class, 100, 4, 4));
+        if (ModConfig.hostileMobSpawningCat.spawnSlime) spawnableMonsterList.add(new Biome.SpawnListEntry(EntitySlime.class, 100, 4, 4));
+        if (ModConfig.hostileMobSpawningCat.spawnEnderman) spawnableMonsterList.add(new Biome.SpawnListEntry(EntityEnderman.class, 10, 1, 4));
+        if (ModConfig.hostileMobSpawningCat.spawnWitch) spawnableMonsterList.add(new Biome.SpawnListEntry(EntityWitch.class, 5, 1, 1));
+        if (ModConfig.passiveMobSpawningCat.spawnSquid) spawnableWaterCreatureList.add(new Biome.SpawnListEntry(EntitySquid.class, 10, 4, 4));
+        if (ModConfig.passiveMobSpawningCat.spawnBat) spawnableCaveCreatureList.add(new Biome.SpawnListEntry(EntityBat.class, 10, 8, 8));
     }
 
     @Override
