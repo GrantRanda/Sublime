@@ -51,9 +51,9 @@ public class BlockMutedGrass extends BlockGrass {
                     Block block = worldIn.getBlockState(blockpos.up()).getBlock();
                     IBlockState iblockstate = worldIn.getBlockState(blockpos);
 
-                    if ((iblockstate.getBlock() == Blocks.GRASS && ModConfig.terrainCat.mutatedGrassSpread || iblockstate.getBlock() == ModBlocks.MUTED_DIRT || iblockstate.getBlock() == Blocks.DIRT && iblockstate.getValue(BlockDirt.VARIANT) == BlockDirt.DirtType.DIRT && ModConfig.terrainCat.mutatedGrassSpread) && block.getLightOpacity(worldIn.getBlockState(blockpos.up()), worldIn, blockpos.up()) <= 2)
+                    if ((iblockstate.getBlock() == Blocks.GRASS && ModConfig.mutedGrassSpread || iblockstate.getBlock() == ModBlocks.MUTED_DIRT || iblockstate.getBlock() == Blocks.DIRT && iblockstate.getValue(BlockDirt.VARIANT) == BlockDirt.DirtType.DIRT && ModConfig.mutedGrassSpread) && block.getLightOpacity(worldIn.getBlockState(blockpos.up()), worldIn, blockpos.up()) <= 2)
                         worldIn.setBlockState(blockpos, ModBlocks.MUTED_GRASS.getDefaultState());
-                    else if (ModConfig.terrainCat.mutatedGrassSpread && iblockstate.getBlock() == Blocks.DIRT && iblockstate.getValue(BlockDirt.VARIANT) == BlockDirt.DirtType.DIRT && worldIn.isSideSolid(blockpos, EnumFacing.UP) && !worldIn.getBlockState(blockpos.up()).getMaterial().isLiquid())
+                    else if (ModConfig.mutedGrassSpread && iblockstate.getBlock() == Blocks.DIRT && iblockstate.getValue(BlockDirt.VARIANT) == BlockDirt.DirtType.DIRT && worldIn.isSideSolid(blockpos, EnumFacing.UP) && !worldIn.getBlockState(blockpos.up()).getMaterial().isLiquid())
                         worldIn.setBlockState(blockpos, ModBlocks.MUTED_DIRT.getDefaultState());
                 }
         }

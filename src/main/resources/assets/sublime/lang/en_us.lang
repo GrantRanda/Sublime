@@ -96,8 +96,10 @@ itemGroup.sublime=Sublime
 
 // Config
 sublime.config.title=Sublime Config
-sublime.config.cat.terrain=Terrain
+sublime.config.cat.world_generation=World Generation
+sublime.config.cat.passive_mob_spawning=Passive Mob Spawning
+sublime.config.cat.hostile_mob_spawning=Hostile Mob Spawning
 
 // World gen
 generator.sublime=Sublime
-generator.sublime.info=Sublime Mod
+generator.sublime.info=Sublime Biome Mod

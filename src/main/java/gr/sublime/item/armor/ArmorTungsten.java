@@ -1,5 +1,6 @@
 package gr.sublime.item.armor;
 
+import gr.sublime.config.ModConfig;
 import gr.sublime.init.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -16,7 +17,14 @@ public class ArmorTungsten extends ArmorBase {
 
     @Override
     public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
-        player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 2, 0, false, false));
-        player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 2, 0, false, false));
+        if (ModConfig.tungstenArmorEffects
+                && player.inventory.armorInventory.get(0).getItem().equals(ModItems.TUNGSTEN_BOOTS)
+                && player.inventory.armorInventory.get(1).getItem().equals(ModItems.TUNGSTEN_LEGGINGS)
+                && player.inventory.armorInventory.get(2).getItem().equals(ModItems.TUNGSTEN_CHESTPLATE)
+                && player.inventory.armorInventory.get(3).getItem().equals(ModItems.TUNGSTEN_HELMET)) {
+
+            player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 2, 0, false, false));
+            player.addPotionEffect(new PotionEffect(MobEffects.FIRE_RESISTANCE, 2, 0, false, false));
+        }
     }
 }
