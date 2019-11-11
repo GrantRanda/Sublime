@@ -2,14 +2,14 @@
 {
   "modid": "sublime",
   "name": "Sublime",
-  "description": "Sublime mod.",
+  "description": "Sublime biome mod.",
   "version": "1.0.0",
   "mcversion": "${mcversion}",
   "url": "https://github.com/GrantRanda/Sublime",
   "updateUrl": "",
   "authorList": ["Grant Randa"],
   "credits": "",
-  "logoFile": "",
+  "logoFile": "assets/sublime/logo.png",
   "screenshots": [],
   "dependencies": []
 }
