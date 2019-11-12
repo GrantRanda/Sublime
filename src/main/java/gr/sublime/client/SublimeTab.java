@@ -9,16 +9,10 @@ public class SublimeTab extends CreativeTabs {
 
     public SublimeTab() {
         super(Reference.ID);
-        setBackgroundImageName("item_search.png");
     }
 
     @Override
     public ItemStack getTabIconItem() {
         return new ItemStack(ModItems.IRIDIUM);
-    }
-
-    @Override
-    public boolean hasSearchBar() {
-        return true;
     }
 }
