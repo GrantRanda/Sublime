@@ -9,7 +9,7 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-public class BlockSlabHanami extends BlockSlabBase {
+public abstract class BlockSlabHanami extends BlockSlabBase {
 
     public BlockSlabHanami(String name) {
         super(name);
