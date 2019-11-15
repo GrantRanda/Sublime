@@ -1,6 +1,6 @@
 # Sublime
 
-A biome mod for Minecraft 1.12.2. Primarily built for personal enjoyment.
+A biome mod for Minecraft 1.12.2.
 
 Available for download on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/sublime).
 
