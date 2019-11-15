@@ -21,14 +21,14 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class ModItems {
 
     // Armor materials
-    public static final ItemArmor.ArmorMaterial ARMOR_IRIDIUM = EnumHelper.addArmorMaterial("armor_iridium", Reference.ID + ":iridium", 30, new int[]{3, 5, 7, 3}, 13, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 3.0f);
-    public static final ItemArmor.ArmorMaterial ARMOR_NIOBIUM = EnumHelper.addArmorMaterial("armor_niobium", Reference.ID + ":niobium", 20, new int[]{2, 5, 7, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1.0f);
-    public static final ItemArmor.ArmorMaterial ARMOR_TUNGSTEN = EnumHelper.addArmorMaterial("armor_tungsten", Reference.ID + ":tungsten", 25, new int[]{3, 6, 6, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.5f);
+    public static final ItemArmor.ArmorMaterial ARMOR_IRIDIUM = EnumHelper.addArmorMaterial("armor_iridium", Reference.ID + ":iridium", 30, new int[]{3, 6, 8, 3}, 8, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.5f);
+    public static final ItemArmor.ArmorMaterial ARMOR_NIOBIUM = EnumHelper.addArmorMaterial("armor_niobium", Reference.ID + ":niobium", 20, new int[]{2, 5, 7, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 0f);
+    public static final ItemArmor.ArmorMaterial ARMOR_TUNGSTEN = EnumHelper.addArmorMaterial("armor_tungsten", Reference.ID + ":tungsten", 25, new int[]{2, 6, 6, 3}, 9, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 2.0f);
 
     // Tool materials
-    public static final Item.ToolMaterial TOOL_IRIDIUM = EnumHelper.addToolMaterial("tool_iridium", 3, 1360, 13.0f, 3.5f, 18);
-    public static final Item.ToolMaterial TOOL_NIOBIUM = EnumHelper.addToolMaterial("tool_niobium", 2, 480, 7.0f, 2.5f, 17);
-    public static final Item.ToolMaterial TOOL_TUNGSTEN = EnumHelper.addToolMaterial("tool_tungsten", 2, 912, 9.0f, 3.0f, 16);
+    public static final Item.ToolMaterial TOOL_IRIDIUM = EnumHelper.addToolMaterial("tool_iridium", 3, 1360, 14.0f, 3.5f, 9);
+    public static final Item.ToolMaterial TOOL_NIOBIUM = EnumHelper.addToolMaterial("tool_niobium", 2, 480, 7.0f, 2.5f, 13);
+    public static final Item.ToolMaterial TOOL_TUNGSTEN = EnumHelper.addToolMaterial("tool_tungsten", 2, 912, 8.0f, 3.0f, 10);
 
     // Misc
     public static final ItemBase IRIDIUM = new ItemBase("iridium");

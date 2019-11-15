@@ -6,7 +6,6 @@ import gr.sublime.util.Reference;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
@@ -43,6 +42,8 @@ public class BlockNiobiumChest extends BlockContainer {
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(Main.creativeTab);
+
+        setHardness(2.5f);
     }
 
     @Override
@@ -158,7 +159,7 @@ public class BlockNiobiumChest extends BlockContainer {
         if (enumfacing != null) {
             return state.withProperty(FACING, enumfacing.getOpposite());
         } else {
-            EnumFacing enumfacing2 = (EnumFacing) state.getValue(FACING);
+            EnumFacing enumfacing2 = state.getValue(FACING);
 
             if (worldIn.getBlockState(pos.offset(enumfacing2)).isFullBlock()) {
                 enumfacing2 = enumfacing2.getOpposite();
@@ -201,19 +202,19 @@ public class BlockNiobiumChest extends BlockContainer {
     }
 
     public int getMetaFromState(IBlockState state) {
-        return ((EnumFacing) state.getValue(FACING)).getIndex();
+        return state.getValue(FACING).getIndex();
     }
 
     public IBlockState withRotation(IBlockState state, Rotation rot) {
-        return state.withProperty(FACING, rot.rotate((EnumFacing) state.getValue(FACING)));
+        return state.withProperty(FACING, rot.rotate(state.getValue(FACING)));
     }
 
     public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
-        return state.withRotation(mirrorIn.toRotation((EnumFacing) state.getValue(FACING)));
+        return state.withRotation(mirrorIn.toRotation(state.getValue(FACING)));
     }
 
     protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, new IProperty[]{FACING});
+        return new BlockStateContainer(this, FACING);
     }
 
     public boolean rotateBlock(World world, BlockPos pos, EnumFacing axis) {

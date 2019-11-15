@@ -9,7 +9,7 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-public class BlockSlabYedoensis extends BlockSlabBase {
+public abstract class BlockSlabYedoensis extends BlockSlabBase {
 
     public BlockSlabYedoensis(String name) {
         super(name);
