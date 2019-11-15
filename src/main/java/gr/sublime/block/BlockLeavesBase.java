@@ -3,7 +3,6 @@ package gr.sublime.block;
 import gr.sublime.Main;
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.BlockPlanks;
-import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
@@ -48,7 +47,7 @@ public class BlockLeavesBase extends BlockLeaves {
     @Nonnull
     @Override
     public List<ItemStack> onSheared(@Nonnull ItemStack item, IBlockAccess world, BlockPos pos, int fortune) {
-        return null;
+        return com.google.common.collect.Lists.newArrayList(new ItemStack(Item.getItemFromBlock(this)));
     }
 
     @Override
@@ -90,7 +89,7 @@ public class BlockLeavesBase extends BlockLeaves {
 
     @Override
     protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, new IProperty[]{CHECK_DECAY, DECAYABLE});
+        return new BlockStateContainer(this, CHECK_DECAY, DECAYABLE);
     }
 
     @Override

@@ -46,6 +46,12 @@ public class BlockDoorBase extends BlockDoor {
         if (this == ModBlocks.DOOR_BLOODLESS_ELM) {
             return ModItems.DOOR_BLOODLESS_ELM;
         }
+        if (this == ModBlocks.DOOR_HANAMI) {
+            return ModItems.DOOR_HANAMI;
+        }
+        if (this == ModBlocks.DOOR_YEDOENSIS) {
+            return ModItems.DOOR_YEDOENSIS;
+        }
         return null;
     }
 }
