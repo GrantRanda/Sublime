@@ -3,7 +3,7 @@
   "modid": "sublime",
   "name": "Sublime",
   "description": "Sublime biome mod.",
-  "version": "1.0",
+  "version": "1.1",
   "mcversion": "${mcversion}",
   "url": "https://www.curseforge.com/minecraft/mc-mods/sublime",
   "updateUrl": "",
