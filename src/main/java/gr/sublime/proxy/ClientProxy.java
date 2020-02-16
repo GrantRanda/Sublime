@@ -1,18 +1,21 @@
 package gr.sublime.proxy;
 
 import gr.sublime.block.BlockLeavesBase;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.item.Item;
-import net.minecraftforge.client.model.ModelLoader;
+import gr.sublime.client.animation.RenderNiobiumChest;
+import gr.sublime.init.ModBlockColors;
+import gr.sublime.tileentity.TileEntityNiobiumChest;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 
 public class ClientProxy extends CommonProxy {
 
     @Override
-    public void registerItemRenderer(Item item, int meta, String id) {
+    public void preInit() {
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityNiobiumChest.class, new RenderNiobiumChest());
+    }
 
-        // Set item model
-        ModelLoader.setCustomModelResourceLocation(item, meta,
-                new ModelResourceLocation(item.getRegistryName(), id));
+    @Override
+    public void init() {
+        ModBlockColors.registerBlockColors();
     }
 
     @Override
