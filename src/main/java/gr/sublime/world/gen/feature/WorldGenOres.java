@@ -1,6 +1,7 @@
 package gr.sublime.world.gen.feature;
 
 import gr.sublime.config.ModConfig;
+import gr.sublime.init.ModBiomes;
 import gr.sublime.init.ModBlocks;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.math.BlockPos;
@@ -18,9 +19,8 @@ public class WorldGenOres implements IWorldGenerator {
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
         if (world.provider.getDimension() == 0) { // Overworld
             BlockPos pos = new BlockPos(chunkX * 16, 63, chunkZ * 16);
-            String currentBiome = world.getBiomeForCoordsBody(pos).getBiomeName();
 
-            if (currentBiome.startsWith("Sublime")) {
+            if (world.provider.getBiomeForCoords(pos) == ModBiomes.SUBLIME) {
 
                 if (ModConfig.worldGenerationCat.oreGenIridium) {
                     generateOre(ModBlocks.IRIDIUM_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 5, 16, 1 + random.nextInt(4), 6);

@@ -39,6 +39,10 @@ public class ModConfig {
     public static boolean tungstenArmorEffects = true;
 
     public static class WorldGenerationCat {
+        @Config.Name("Structures")
+        @Config.Comment("Controls Sublime structure generation")
+        public boolean genStructures = true;
+
         @Config.Name("Ore Iridium")
         @Config.Comment("Controls Iridium Ore generation")
         public boolean oreGenIridium = true;
