@@ -6,7 +6,7 @@ Available for download on [CurseForge](https://www.curseforge.com/minecraft/mc-m
 
 ## Features
 
-* *Sublime Biome*
+* *Sublime Biome with generated structures*
 * *Muted Dirt*, *Muted Grass*
 * *Bloodless Elm Tree*, *Hanami Tree*, *Yedoensis Tree*
   * Sapling
@@ -40,4 +40,4 @@ Available for download on [CurseForge](https://www.curseforge.com/minecraft/mc-m
 
 ![Biome 1](images/screenshots/biome1.png)
 
-![Biome 2](images/screenshots/biome2.png)
+![Structures 1](images/screenshots/structures1.png)
