@@ -17,7 +17,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModBiomes {
     public static final BiomeBase SUBLIME = new BiomeSublime(new Biome.BiomeProperties("Sublime")
             .setWaterColor(ModConfig.customWaterColor ? 0x59FF3E : 16777215)
-            .setBaseHeight(-0.3f)
+            .setBaseHeight(-0.2f)
             .setHeightVariation(0.6f)
             .setTemperature(0.6f));
 

@@ -1,17 +1,14 @@
 package gr.sublime;
 
 import gr.sublime.client.SublimeTab;
-import gr.sublime.client.animation.RenderNiobiumChest;
 import gr.sublime.client.gui.GuiHandler;
 import gr.sublime.init.ModBiomes;
-import gr.sublime.init.ModBlockColors;
 import gr.sublime.init.ModBlocks;
 import gr.sublime.init.ModItems;
 import gr.sublime.init.ModRecipes;
 import gr.sublime.init.ModTileEntities;
 import gr.sublime.init.ModWorldGen;
 import gr.sublime.proxy.CommonProxy;
-import gr.sublime.tileentity.TileEntityNiobiumChest;
 import gr.sublime.util.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -19,7 +16,6 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -58,6 +54,7 @@ public class Main {
         ConfigManager.sync(Reference.ID, Config.Type.INSTANCE);
 
         ModBiomes.registerBiomes();
+        proxy.preInit();
     }
 
     @Mod.EventHandler
@@ -65,8 +62,8 @@ public class Main {
         NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 
         ModWorldGen.registerWorldGenerators();
-        ModBlockColors.registerBlockColors();
         ModRecipes.init();
+        proxy.init();
     }
 
     @Mod.EventHandler
@@ -94,8 +91,6 @@ public class Main {
         @SubscribeEvent
         public static void registerEntities(final RegistryEvent.Register<EntityEntry> event) {
             ModTileEntities.register();
-
-            ClientRegistry.bindTileEntitySpecialRenderer(TileEntityNiobiumChest.class, new RenderNiobiumChest());
         }
 
         @SubscribeEvent
